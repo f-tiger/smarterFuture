@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages
+
+# 把纯静态站点部署到 GitHub Pages。
+# 触发：推送到分支 / 手动触发。仓库需为 Public（免费版 Pages 要求）。
+on:
+  push:
+    branches:
+      - claude/compound-growth-website-91uwq4
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 准备发布目录（仅站点文件，排除 .git/automation 等）
+        run: |
+          mkdir -p _site
+          cp index.html project.html _site/
+          cp -r assets data _site/
+          cp _headers _site/ 2>/dev/null || true
+          # 关闭 Jekyll，确保以纯静态方式服务
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
