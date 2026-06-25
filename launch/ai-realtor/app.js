@@ -15,6 +15,9 @@
     gtag('config', C.gaMeasurementId);
   }
 
+  // 转化事件埋点（配置 gaMeasurementId 后自动上报到 GA4）
+  function track(name, params) { if (window.gtag) { try { window.gtag('event', name, params || {}); } catch (e) {} } }
+
   // 品牌占位填充
   document.querySelectorAll('[data-brand]').forEach(function (e) { e.textContent = C.brand || 'ListingLift'; });
   document.querySelectorAll('[data-product]').forEach(function (e) { e.textContent = C.productName || 'AI Listing Writer'; });
@@ -62,6 +65,7 @@
       var hint = el.getAttribute('data-buy-hint');
       if (hint) { var h = document.querySelector(hint); if (h) h.textContent = '（演示：配置 productCheckoutUrl 后此按钮直达收款页）'; }
     }
+    el.addEventListener('click', function () { track('begin_checkout', { item_name: 'AI Realtor Toolkit', value: 29, currency: 'USD' }); });
   });
 
   // 邮件名单表单
@@ -73,6 +77,7 @@
       if (!msg && form.nextElementSibling && form.nextElementSibling.matches && form.nextElementSibling.matches('[data-msg]')) msg = form.nextElementSibling;
       if (!email) { return; }
       if (!C.emailEndpoint) {
+        track('generate_lead', { source: 'listinglift', mode: 'demo' });
         if (msg) { msg.textContent = '✅ 演示模式：已记录「' + email + '」（配置 emailEndpoint 后将真正写入名单）。'; msg.style.color = '#16a34a'; }
         form.reset();
         return;
@@ -84,7 +89,7 @@
         body: JSON.stringify({ email: email, source: 'listinglift' })
       }).then(function (r) {
         if (msg) {
-          if (r.ok) { msg.textContent = '✅ 已加入早鸟名单，留意你的邮箱！'; msg.style.color = '#16a34a'; form.reset(); }
+          if (r.ok) { track('generate_lead', { source: 'listinglift' }); msg.textContent = '✅ 已加入早鸟名单，留意你的邮箱！'; msg.style.color = '#16a34a'; form.reset(); }
           else { msg.textContent = '提交失败，请稍后再试。'; msg.style.color = '#e11d48'; }
         }
       }).catch(function () {
