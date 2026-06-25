@@ -108,6 +108,11 @@ function render(p) {
     <h1 class="text-3xl font-extrabold mt-2">${esc(p.name)}</h1>
     <p class="text-slate-600 mt-2">${esc(p.tagline)}</p>
     <p class="text-sm text-slate-500 mt-1">落地分级说明：${lv.desc}</p>
+    ${p.liveOperation ? `
+    <a href="${esc(p.liveOperation.url)}" class="block mt-4 rounded-2xl border-2 border-brandgreen/50 bg-emerald-50 p-4 hover:shadow-md transition">
+      <div class="flex items-center gap-2"><span class="text-xs font-bold bg-brandgreen text-white px-2 py-0.5 rounded-full">🚀 ${esc(p.liveOperation.status)}</span><span class="font-bold">${esc(p.liveOperation.name)}</span><span class="ml-auto text-brandblue text-sm">打开运营站 →</span></div>
+      <div class="text-sm text-slate-600 mt-1">${esc(p.liveOperation.note)}</div>
+    </a>` : ''}
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">
       <div class="bg-white rounded-xl border border-slate-200 p-3 text-center"><div class="text-xl font-bold">${esc(m.estimatedRoi)}</div><div class="text-xs text-slate-400">ROI（估算）</div></div>

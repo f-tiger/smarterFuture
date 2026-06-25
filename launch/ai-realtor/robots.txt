@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://f-tiger.github.io/smarterFuture/launch/ai-realtor/sitemap.xml

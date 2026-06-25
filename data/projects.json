@@ -3,6 +3,12 @@
     "id": "niche-ai-wrapper",
     "name": "垂直场景 AI 工具 (Wrapper)",
     "tagline": "把通用大模型包装成解决具体痛点的订阅工具",
+    "liveOperation": {
+      "name": "ListingLift",
+      "url": "launch/ai-realtor/",
+      "status": "M0 已上线 · 运营中",
+      "note": "AI 帮房产经纪写文案的内容获客站，邮件名单+广告/联盟变现位已埋好"
+    },
     "category": "AI工具 / 微型SaaS",
     "sourceUrl": "https://www.indiehackers.com/",
     "discoveredDate": "2026-06-12",
