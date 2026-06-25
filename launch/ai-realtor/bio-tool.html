@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free AI Real Estate Agent Bio Generator | ListingLift</title>
+<meta name="description" content="Free AI real-estate agent bio generator. Enter your details and get a polished short and long bio for your website, MLS, and social profiles. No signup."/>
+<link rel="canonical" href="https://f-tiger.github.io/smarterFuture/launch/ai-realtor/bio-tool.html"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Free AI Real Estate Agent Bio Generator"/>
+<meta property="og:description" content="Enter your details → get a polished short and long agent bio. Free."/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"AI Real Estate Agent Bio Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free agent bio generator for real-estate agents."}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="index.html">Listing<span>Lift</span></a>
+  <nav><a href="tools.html">Free tools</a><a href="toolkit.html">Toolkit</a><a href="index.html#guides">Guides</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="badge">Free · No signup · Works with any AI</div>
+  <h1>AI Agent <span style="color:#2563eb">Bio Generator</span></h1>
+  <p class="sub">Enter a few details and get a polished short and long bio for your website, MLS profile, and social media — in seconds.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="section">
+    <form id="bioForm">
+      <div class="form-grid">
+        <div class="field"><label for="b_name">Your name</label><input id="b_name" placeholder="Alex Rivera"/></div>
+        <div class="field"><label for="b_years">Years of experience</label><input id="b_years" inputmode="numeric" placeholder="7"/></div>
+        <div class="field"><label for="b_area">Market / area</label><input id="b_area" placeholder="East Austin"/></div>
+        <div class="field"><label for="b_tone">Tone</label><select id="b_tone"><option>Warm</option><option>Professional</option><option>Approachable</option></select></div>
+        <div class="field full"><label for="b_spec">Specialties (comma-separated)</label><input id="b_spec" placeholder="first-time buyers, luxury homes, relocations"/></div>
+        <div class="field full"><label for="b_personal">A personal touch (optional)</label><textarea id="b_personal" placeholder="A lifelong Austinite and weekend trail runner."></textarea></div>
+      </div>
+      <p style="margin-top:14px"><button class="btn blue" type="submit">Generate bio &rarr;</button></p>
+    </form>
+
+    <div id="results" style="display:none">
+      <div class="outhead"><h3 style="margin:0">📝 Short bio (~50 words)</h3><button class="copybtn" data-copy="outShort">Copy</button></div>
+      <div class="promptbox" id="outShort"></div>
+      <div class="outhead"><h3 style="margin:0">📄 Long bio (~120 words)</h3><button class="copybtn" data-copy="outLong">Copy</button></div>
+      <div class="promptbox" id="outLong"></div>
+      <p class="note">⚠️ Review for accuracy and fair-housing compliance before publishing.</p>
+      <div class="outhead"><h3 style="margin:0">🤖 Prompt to refine in any AI</h3><button class="copybtn" data-copy="outPrompt">Copy</button></div>
+      <div class="promptbox" id="outPrompt"></div>
+
+      <div class="aff" style="background:#eff6ff;border-color:#bfdbfe">
+        <h3>Want 60 prompts + templates for everything else? 🧰</h3>
+        <p>The <strong>AI Realtor Toolkit</strong> covers listings, emails, social, and more. <a class="btn blue" data-buy href="toolkit.html" style="margin-left:6px">Get the Toolkit — <span data-price>$29</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot"></div>
+
+  <section class="section" style="text-align:center">
+    <h2>Get notified when the one-click app launches</h2>
+    <form class="cta-form" data-capture style="justify-content:center;margin:0 auto">
+      <input type="email" required placeholder="you@brokerage.com" aria-label="email"/>
+      <button class="btn" type="submit">加入早鸟名单</button>
+    </form>
+    <div class="note" data-msg></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <div>© <span data-brand>ListingLift</span> · Practical AI for real-estate agents · Not legal advice.</div>
+  <div><a href="tools.html">All free tools</a> · <a href="toolkit.html">Toolkit</a></div>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="bio-tool.js"></script>
+</body>
+</html>
