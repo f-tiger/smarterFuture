@@ -95,3 +95,28 @@
 - **D4–D7**：Pinterest 每天 5 Pin；复盘哪条渠道有点击/销售，加倍
 
 **第一单成交 → 截图发我 → 我把"X sold this week + 好评"加到销售页拉高后续转化。**
+
+---
+
+## 7) Reddit 专用（板块 + 文案 + 防删规则）
+**板块（按工具友好度）**：r/RealEstateTechnology（最稳）、r/SideProject、r/realtors（严格,先看规则）、r/Entrepreneur（仅每周 share-your-startup 置顶帖）、r/InternetIsBeautiful（仅纯免费工具,不提付费）。
+
+**文案 A — 工具友好板块**
+Title: I built free AI tools for agents (listing writer, follow-up emails, "roast my listing") — no signup
+Body:
+> I kept re-writing the same listings and follow-up emails, so I built a few free tools to speed it up. No login, no email required:
+> • Listing description writer (property facts → MLS-ready draft in ~30s)
+> • Follow-up email generator (new lead / post-showing / price drop)
+> • "Roast my listing" checker — flags clichés + fair-housing risk words
+> • Social caption + Instagram bio makers
+> Link: https://f-tiger.github.io/smarterFuture/launch/ai-realtor/
+> All free. I'd love feedback — what's missing, what would actually save you time?
+（付费只在评论被问时给：there's a $29 pack with the full prompt+template library, LAUNCH40 = 40% off: https://payhip.com/b/4rDt0）
+
+**文案 B — 严格板块 (r/realtors)，超软**
+Title: Made a free listing-description tool — would love agents' honest feedback
+Body:
+> Not selling anything — I built a free tool that turns property details into an MLS-ready listing draft in ~30s (no signup): https://f-tiger.github.io/smarterFuture/launch/ai-realtor/tool.html
+> Does the output feel usable to actual agents? What would you change?
+
+**防删规则**：正文只放免费工具链接；付费仅评论被问时给；每板块改标题/正文；发完真诚回评；别一天发多个板块；新号先评论攒信誉；别用营销腔/emoji 轰炸。
