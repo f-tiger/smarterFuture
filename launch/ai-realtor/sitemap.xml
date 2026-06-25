@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/how-to-write-listing-with-ai.html</loc><priority>0.8</priority></url>
-  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-prompts-for-real-estate-agents.html</loc><priority>0.8</priority></url>
-  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/fair-housing-ai-compliance.html</loc><priority>0.8</priority></url>
-  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-social-captions-for-realtors.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/agent-bio-with-ai.html</loc><priority>0.8</priority></url>
   <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-email-followups-for-leads.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-open-house-marketing.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-prompts-for-real-estate-agents.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-social-captions-for-realtors.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/best-ai-tools-for-agents.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/examples-condo.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/examples-fixer-upper.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/examples-luxury.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/examples-rental.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/examples-single-family.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/fair-housing-ai-compliance.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/how-to-write-listing-with-ai.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/neighborhood-descriptions-with-ai.html</loc><priority>0.8</priority></url>
+  <url><loc>https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/price-narrative-with-ai.html</loc><priority>0.8</priority></url>
 </urlset>
