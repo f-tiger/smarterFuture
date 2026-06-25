@@ -28,6 +28,11 @@ window.SITE_CONFIG = {
   productPrice: "$29",          // 售价展示
   productPriceOld: "$49",       // 划线原价（可留空）
 
+  // 4b) 第二个数字产品《90-Day Real Estate Content Calendar》
+  product2CheckoutUrl: "",      // 例: "https://yourname.gumroad.com/l/content-calendar"
+  product2Price: "$19",
+  product2PriceOld: "$29",
+
   // 5) 数据测量（强烈建议尽早开，用来看流量与转化）
   gaMeasurementId: ""           // Google Analytics 4，例: "G-XXXXXXXXXX"，留空=不加载
 };

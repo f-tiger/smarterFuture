@@ -48,25 +48,32 @@
     }
   });
 
-  // 价格展示
+  // 价格展示（产品1）
   document.querySelectorAll('[data-price]').forEach(function (e) { e.textContent = C.productPrice || '$29'; });
   document.querySelectorAll('[data-price-old]').forEach(function (e) {
     if (C.productPriceOld) { e.textContent = C.productPriceOld; } else { e.style.display = 'none'; }
   });
-
-  // 购买按钮：有 checkout 链接则跳转，否则回退到等待名单
-  document.querySelectorAll('[data-buy]').forEach(function (el) {
-    if (C.productCheckoutUrl) {
-      el.setAttribute('href', C.productCheckoutUrl);
-      el.setAttribute('target', '_blank');
-      el.setAttribute('rel', 'noopener');
-    } else {
-      el.setAttribute('href', '#waitlist');
-      var hint = el.getAttribute('data-buy-hint');
-      if (hint) { var h = document.querySelector(hint); if (h) h.textContent = '（演示：配置 productCheckoutUrl 后此按钮直达收款页）'; }
-    }
-    el.addEventListener('click', function () { track('begin_checkout', { item_name: 'AI Realtor Toolkit', value: 29, currency: 'USD' }); });
+  // 价格展示（产品2）
+  document.querySelectorAll('[data-price2]').forEach(function (e) { e.textContent = C.product2Price || '$19'; });
+  document.querySelectorAll('[data-price2-old]').forEach(function (e) {
+    if (C.product2PriceOld) { e.textContent = C.product2PriceOld; } else { e.style.display = 'none'; }
   });
+
+  // 购买按钮通用接线
+  function wireBuy(sel, url, name, value) {
+    document.querySelectorAll(sel).forEach(function (el) {
+      if (url) {
+        el.setAttribute('href', url); el.setAttribute('target', '_blank'); el.setAttribute('rel', 'noopener');
+      } else {
+        el.setAttribute('href', '#waitlist');
+        var hint = el.getAttribute('data-buy-hint');
+        if (hint) { var h = document.querySelector(hint); if (h) h.textContent = '（演示：配置收款链接后此按钮直达收款页）'; }
+      }
+      el.addEventListener('click', function () { track('begin_checkout', { item_name: name, value: value, currency: 'USD' }); });
+    });
+  }
+  wireBuy('[data-buy]', C.productCheckoutUrl, 'AI Realtor Toolkit', 29);
+  wireBuy('[data-buy2]', C.product2CheckoutUrl, '90-Day Content Calendar', 19);
 
   // 邮件名单表单
   document.querySelectorAll('form[data-capture]').forEach(function (form) {
