@@ -1,0 +1,339 @@
+[
+  {
+    "id": "ai-seo-programmatic",
+    "name": "Programmatic SEO 内容站",
+    "tagline": "用 AI 批量生成长尾关键词落地页，靠自然流量 + 联盟/广告变现",
+    "category": "内容站 / SEO",
+    "sourceUrl": "https://www.indiehackers.com/",
+    "discoveredDate": "2026-06-20",
+    "updatedDate": "2026-06-25",
+    "automationLevel": "ai-auto",
+    "compoundScore": 88,
+    "metrics": {
+      "estimatedRoi": "8-15x (estimate, 12个月)",
+      "paybackPeriodMonths": 4,
+      "startupCostUsd": 120,
+      "monthlyRevenuePotentialUsd": 4000,
+      "difficulty": 2,
+      "timeToMvpWeeks": 1
+    },
+    "businessModel": {
+      "revenueModel": "联盟佣金 + 展示广告 (Mediavine/AdSense)",
+      "pricing": "免费内容，流量变现",
+      "targetMarket": "搜索特定长尾问题的全球用户",
+      "acquisitionChannels": ["Google 自然搜索", "Pinterest", "Reddit"]
+    },
+    "competitors": [
+      { "name": "NerdWallet 类垂直站", "url": "https://www.nerdwallet.com", "strengths": "权威、高权重域名", "weaknesses": "更新慢、成本高", "wedge": "用 AI 覆盖它们看不上的超长尾词，速度快 100 倍" }
+    ],
+    "analysis": {
+      "opportunity": "AI 让单人可生产数千页高质量长尾内容，抢占被巨头忽略的长尾流量",
+      "risks": "Google 算法更新与 AI 内容政策风险；需保证内容质量与 E-E-A-T",
+      "moat": "数据/选题积累 + 域名权重随时间复利增长"
+    },
+    "roadshow": {
+      "problem": "海量长尾搜索需求未被满足，传统内容生产太慢太贵",
+      "solution": "AI 流水线：选题→生成→结构化→发布→监测排名→迭代",
+      "marketSize": "全球内容营销 $600B+ ，SEO 流量长尾占比 70%+",
+      "traction": "大量独立开发者公开 $3k-$30k/月 案例",
+      "businessModel": "零边际成本内容，流量复利变现",
+      "replicationPath": "选垂直 → 关键词聚类 → AI 批量生成 → 静态站发布 → 联盟变现"
+    },
+    "claudeReplicability": {
+      "canClaudeBuild": true,
+      "claudeSteps": ["关键词聚类与选题", "批量生成结构化文章", "生成静态站点与内链", "监测排名脚本"],
+      "humanInterventionPoints": ["⚠️ 注册域名与广告/联盟账号", "⚠️ 绑定收款与税务信息", "⚠️ 抽查内容质量避免违规"]
+    },
+    "landingPlan": {
+      "type": "ai-auto",
+      "steps": [
+        { "step": "确定垂直与关键词集", "owner": "claude", "etaDays": 1 },
+        { "step": "批量生成首批 200 页", "owner": "claude", "etaDays": 1 },
+        { "step": "注册域名 + 联盟账号", "owner": "human", "etaDays": 1 },
+        { "step": "部署静态站 + 提交收录", "owner": "claude", "etaDays": 1 },
+        { "step": "等待索引并迭代选题", "owner": "claude", "etaDays": 30 }
+      ],
+      "totalEtaDays": 34
+    }
+  },
+  {
+    "id": "niche-ai-wrapper",
+    "name": "垂直场景 AI 工具 (Wrapper)",
+    "tagline": "把通用大模型包装成解决某个具体痛点的订阅工具，如 AI 简历/合同/落地页生成",
+    "category": "AI工具 / 微型SaaS",
+    "sourceUrl": "https://theresanaiforthat.com/",
+    "discoveredDate": "2026-06-19",
+    "updatedDate": "2026-06-25",
+    "automationLevel": "ai-auto",
+    "compoundScore": 84,
+    "metrics": {
+      "estimatedRoi": "5-10x (estimate)",
+      "paybackPeriodMonths": 3,
+      "startupCostUsd": 200,
+      "monthlyRevenuePotentialUsd": 6000,
+      "difficulty": 2,
+      "timeToMvpWeeks": 2
+    },
+    "businessModel": {
+      "revenueModel": "SaaS 订阅 (freemium)",
+      "pricing": "$9-$29/月，免费额度引流",
+      "targetMarket": "有明确重复性文案/文档需求的专业人群",
+      "acquisitionChannels": ["AI 工具目录", "SEO", "X/Reddit 社区"]
+    },
+    "competitors": [
+      { "name": "通用 ChatGPT", "url": "https://chat.openai.com", "strengths": "强大通用", "weaknesses": "需用户自己写 prompt，无场景化工作流", "wedge": "封装最佳 prompt + 模板 + 一键导出，降低使用门槛" }
+    ],
+    "analysis": {
+      "opportunity": "大量非技术用户愿为'省去 prompt 工程'的垂直工具付费",
+      "risks": "底层模型方可能原生覆盖该场景；获客成本上升",
+      "moat": "垂直数据、模板库、品牌与渠道占位"
+    },
+    "roadshow": {
+      "problem": "用户知道 AI 能帮忙，但不会写 prompt、缺乏工作流",
+      "solution": "针对单一场景的极简一键工具 + 导出/协作",
+      "marketSize": "AI 应用层 SaaS，数百亿美元且高速增长",
+      "traction": "众多 wrapper 公开 $5k-$50k MRR",
+      "businessModel": "低客单价、高频订阅",
+      "replicationPath": "选场景 → 设计 prompt 工作流 → 接 API + 支付 → 上线目录引流"
+    },
+    "claudeReplicability": {
+      "canClaudeBuild": true,
+      "claudeSteps": ["前后端代码", "prompt 工作流设计", "接入模型 API", "落地页与文案", "目录提交内容"],
+      "humanInterventionPoints": ["⚠️ 注册 Stripe 收款（需企业/个人 KYC）", "⚠️ 配置 API 密钥与账单", "⚠️ 客服与退款处理"]
+    },
+    "landingPlan": {
+      "type": "ai-auto",
+      "steps": [
+        { "step": "确定场景与定价", "owner": "human", "etaDays": 1 },
+        { "step": "Claude 生成全栈 MVP", "owner": "claude", "etaDays": 3 },
+        { "step": "接 Stripe + 模型 API 密钥", "owner": "human", "etaDays": 1 },
+        { "step": "部署 + 提交 AI 目录", "owner": "claude", "etaDays": 2 }
+      ],
+      "totalEtaDays": 7
+    }
+  },
+  {
+    "id": "productized-service",
+    "name": "生产化服务 (Productized Service)",
+    "tagline": "把'设计/文案/视频剪辑/数据清洗'打包成固定价格订阅服务，AI 产能 + 人工把关",
+    "category": "自动化服务",
+    "sourceUrl": "https://www.starterstory.com/ideas",
+    "discoveredDate": "2026-06-18",
+    "updatedDate": "2026-06-25",
+    "automationLevel": "ai-human",
+    "compoundScore": 79,
+    "metrics": {
+      "estimatedRoi": "4-8x (estimate)",
+      "paybackPeriodMonths": 2,
+      "startupCostUsd": 100,
+      "monthlyRevenuePotentialUsd": 8000,
+      "difficulty": 3,
+      "timeToMvpWeeks": 1
+    },
+    "businessModel": {
+      "revenueModel": "固定价格月度订阅 (如 $499/月 无限需求排队)",
+      "pricing": "$299-$999/月",
+      "targetMarket": "中小企业、创业者、营销团队",
+      "acquisitionChannels": ["冷启动外联", "X build in public", "口碑转介绍"]
+    },
+    "competitors": [
+      { "name": "Design Pickle / 同类订阅设计", "url": "https://designpickle.com", "strengths": "成熟流程", "weaknesses": "纯人工、成本高、交付慢", "wedge": "AI 产能让交付更快、毛利更高" }
+    ],
+    "analysis": {
+      "opportunity": "AI 大幅提升单人产能，可用更低价格抢占订阅服务市场",
+      "risks": "依赖人工质检与客户沟通，难 100% 自动化；存在交付/客诉",
+      "moat": "口碑、案例库、AI+人工的混合流程效率"
+    },
+    "roadshow": {
+      "problem": "企业需要持续的创意/运营产出，但全职雇人贵、外包不稳定",
+      "solution": "固定月费、无限排队、AI 加速 + 人工把关的可预期交付",
+      "marketSize": "全球自由职业/外包服务 $1.5T+",
+      "traction": "大量订阅式服务公司公开六位数年收入",
+      "businessModel": "高客单价订阅，毛利由 AI 提升",
+      "replicationPath": "选品类 → 定义 SLA → 建 AI 流水线 → 接单 → 人工质检交付"
+    },
+    "claudeReplicability": {
+      "canClaudeBuild": true,
+      "claudeSteps": ["落地页与定价", "AI 交付流水线", "需求受理/排期系统", "初稿产出"],
+      "humanInterventionPoints": ["⚠️ 与客户沟通需求与验收", "⚠️ 最终质检与品牌把关", "⚠️ 收款与合同", "⚠️ 处理修改与客诉"]
+    },
+    "landingPlan": {
+      "type": "ai-human",
+      "steps": [
+        { "step": "选服务品类与 SLA", "owner": "human", "etaDays": 1 },
+        { "step": "搭落地页 + 受理系统", "owner": "claude", "etaDays": 2 },
+        { "step": "建 AI 交付流水线", "owner": "claude", "etaDays": 2 },
+        { "step": "冷启动获取首批客户", "owner": "human", "etaDays": 7 }
+      ],
+      "totalEtaDays": 12
+    }
+  },
+  {
+    "id": "newsletter-curation",
+    "name": "垂直行业 AI 策展 Newsletter",
+    "tagline": "AI 聚合+摘要某垂直领域资讯，免费订阅做大，再靠赞助/付费会员变现",
+    "category": "内容站 / 媒体",
+    "sourceUrl": "https://www.indiehackers.com/",
+    "discoveredDate": "2026-06-17",
+    "updatedDate": "2026-06-25",
+    "automationLevel": "ai-auto",
+    "compoundScore": 75,
+    "metrics": {
+      "estimatedRoi": "3-6x (estimate)",
+      "paybackPeriodMonths": 6,
+      "startupCostUsd": 50,
+      "monthlyRevenuePotentialUsd": 3000,
+      "difficulty": 2,
+      "timeToMvpWeeks": 1
+    },
+    "businessModel": {
+      "revenueModel": "赞助广告 + 付费会员",
+      "pricing": "免费订阅；赞助 $200-$2000/期；会员 $5/月",
+      "targetMarket": "某垂直行业的从业者",
+      "acquisitionChannels": ["社交推荐", "SEO", "交叉推广"]
+    },
+    "competitors": [
+      { "name": "Morning Brew 类", "url": "https://morningbrew.com", "strengths": "规模与品牌", "weaknesses": "宽泛、人工成本高", "wedge": "更垂直、AI 自动产出、运营成本近乎为零" }
+    ],
+    "analysis": {
+      "opportunity": "AI 让单人维护多个垂直 newsletter 成为可能，订阅资产可复利",
+      "risks": "增长依赖内容质量与分发；赞助变现需达到一定规模",
+      "moat": "订阅者列表是可复利的私域资产"
+    },
+    "roadshow": {
+      "problem": "从业者信息过载，需要可信的垂直精选",
+      "solution": "AI 每日/每周聚合摘要 + 人工口味校准",
+      "marketSize": "email 营销 ROI 行业最高，newsletter 经济持续增长",
+      "traction": "多个一人 newsletter 达到数十万订阅、六位数收入",
+      "businessModel": "免费引流 + 赞助/会员变现",
+      "replicationPath": "选垂直 → AI 聚合摘要 → 自动发送 → 增长 → 接赞助"
+    },
+    "claudeReplicability": {
+      "canClaudeBuild": true,
+      "claudeSteps": ["RSS/来源聚合", "AI 摘要与排版", "自动发送脚本", "落地页"],
+      "humanInterventionPoints": ["⚠️ 注册邮件服务 (ESP) 与域名认证", "⚠️ 谈赞助 / 商务", "⚠️ 抽查避免错误信息"]
+    },
+    "landingPlan": {
+      "type": "ai-auto",
+      "steps": [
+        { "step": "选垂直 + 注册 ESP", "owner": "human", "etaDays": 1 },
+        { "step": "Claude 搭聚合+发送流水线", "owner": "claude", "etaDays": 2 },
+        { "step": "上线落地页引流", "owner": "claude", "etaDays": 1 },
+        { "step": "持续增长至可接赞助", "owner": "human", "etaDays": 60 }
+      ],
+      "totalEtaDays": 64
+    }
+  },
+  {
+    "id": "chrome-extension-microsaas",
+    "name": "Chrome 扩展微型 SaaS",
+    "tagline": "解决某个浏览器内高频小痛点的扩展，一次性或低价订阅变现",
+    "category": "微型SaaS",
+    "sourceUrl": "https://news.ycombinator.com/show",
+    "discoveredDate": "2026-06-16",
+    "updatedDate": "2026-06-25",
+    "automationLevel": "ai-auto",
+    "compoundScore": 72,
+    "metrics": {
+      "estimatedRoi": "4-7x (estimate)",
+      "paybackPeriodMonths": 4,
+      "startupCostUsd": 30,
+      "monthlyRevenuePotentialUsd": 2500,
+      "difficulty": 2,
+      "timeToMvpWeeks": 1
+    },
+    "businessModel": {
+      "revenueModel": "一次性买断 + 高级订阅",
+      "pricing": "$5 买断 / $3 月订阅",
+      "targetMarket": "特定工作流的重度浏览器用户",
+      "acquisitionChannels": ["Chrome 商店搜索", "Product Hunt", "社区"]
+    },
+    "competitors": [
+      { "name": "同类扩展", "url": "https://chromewebstore.google.com", "strengths": "已有用户", "weaknesses": "更新停滞、体验差", "wedge": "更聚焦的单一痛点 + 更好 UX" }
+    ],
+    "analysis": {
+      "opportunity": "Chrome 商店自带分发，单一痛点扩展开发快、获客成本低",
+      "risks": "平台政策与审核；易被复制",
+      "moat": "商店排名、评分与持续迭代"
+    },
+    "roadshow": {
+      "problem": "浏览器内某高频操作繁琐、缺好用工具",
+      "solution": "极简扩展一键解决",
+      "marketSize": "Chrome 数十亿用户，扩展生态庞大",
+      "traction": "多款单人扩展月入数千美元",
+      "businessModel": "低价买断 + 订阅升级",
+      "replicationPath": "找痛点 → Claude 写扩展 → 商店上架 → 评分增长"
+    },
+    "claudeReplicability": {
+      "canClaudeBuild": true,
+      "claudeSteps": ["扩展全部代码", "图标与商店素材", "落地页", "更新迭代"],
+      "humanInterventionPoints": ["⚠️ 注册 Chrome 开发者账号 ($5)", "⚠️ 提交审核与合规", "⚠️ 接支付与收款"]
+    },
+    "landingPlan": {
+      "type": "ai-auto",
+      "steps": [
+        { "step": "确定痛点", "owner": "human", "etaDays": 1 },
+        { "step": "Claude 开发扩展", "owner": "claude", "etaDays": 2 },
+        { "step": "注册开发者账号并上架", "owner": "human", "etaDays": 2 },
+        { "step": "审核通过后推广", "owner": "claude", "etaDays": 3 }
+      ],
+      "totalEtaDays": 8
+    }
+  },
+  {
+    "id": "local-lead-gen",
+    "name": "本地商家 Lead-Gen 站",
+    "tagline": "为某地区某行业建排名站，把客户线索卖给本地商家（按 lead 收费）",
+    "category": "自动化服务 / 本地",
+    "sourceUrl": "https://www.starterstory.com/ideas",
+    "discoveredDate": "2026-06-15",
+    "updatedDate": "2026-06-25",
+    "automationLevel": "manual",
+    "compoundScore": 66,
+    "metrics": {
+      "estimatedRoi": "3-5x (estimate)",
+      "paybackPeriodMonths": 6,
+      "startupCostUsd": 300,
+      "monthlyRevenuePotentialUsd": 5000,
+      "difficulty": 4,
+      "timeToMvpWeeks": 3
+    },
+    "businessModel": {
+      "revenueModel": "按线索付费 / 月费租站给商家",
+      "pricing": "$20-$80/lead 或 $500/月",
+      "targetMarket": "本地服务商（水管、装修、律师等）",
+      "acquisitionChannels": ["本地 SEO", "Google 商家", "电话外联"]
+    },
+    "competitors": [
+      { "name": "Thumbtack / Angi", "url": "https://www.angi.com", "strengths": "规模大", "weaknesses": "对小商家抽成高、体验差", "wedge": "垂直深耕单一地区+行业，线索更精准" }
+    ],
+    "analysis": {
+      "opportunity": "本地服务高客单、线索价值高，竞争相对低",
+      "risks": "强依赖本地 SEO 与电话谈判，自动化程度低",
+      "moat": "地区+行业的 SEO 排名与商家关系"
+    },
+    "roadshow": {
+      "problem": "本地商家缺稳定获客，平台抽成高",
+      "solution": "精准排名站把高意向线索直接送达商家",
+      "marketSize": "本地服务广告数千亿美元",
+      "traction": "lead-gen 是经典且稳定的现金流模式",
+      "businessModel": "按效果付费，毛利高",
+      "replicationPath": "选地区行业 → 建站做本地 SEO → 谈商家 → 卖线索"
+    },
+    "claudeReplicability": {
+      "canClaudeBuild": false,
+      "claudeSteps": ["建站与本地 SEO 内容", "线索表单与追踪", "数据分析"],
+      "humanInterventionPoints": ["⚠️ 电话/上门谈本地商家（核心，难自动化）", "⚠️ Google 商家验证（需实体/电话）", "⚠️ 线索质量纠纷处理", "⚠️ 收款与合同"]
+    },
+    "landingPlan": {
+      "type": "manual",
+      "steps": [
+        { "step": "选地区+行业", "owner": "human", "etaDays": 2 },
+        { "step": "Claude 建站 + SEO 内容", "owner": "claude", "etaDays": 3 },
+        { "step": "本地 SEO 起量", "owner": "human", "etaDays": 45 },
+        { "step": "谈商家并交付线索", "owner": "human", "etaDays": 14 }
+      ],
+      "totalEtaDays": 64
+    }
+  }
+]

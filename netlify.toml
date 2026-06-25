@@ -1,0 +1,9 @@
+# 静态站点，无需构建。直接发布根目录。
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"

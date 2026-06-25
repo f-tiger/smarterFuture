@@ -1,0 +1,20 @@
+{
+  "description": "海外创业项目调研信息源。可自由增删；引擎会按 enabled 与权重抓取。",
+  "sources": [
+    { "name": "Indie Hackers", "url": "https://www.indiehackers.com/products", "type": "revenue-cases", "enabled": true, "weight": 1.0 },
+    { "name": "Product Hunt", "url": "https://www.producthunt.com/", "type": "launches", "enabled": true, "weight": 0.9 },
+    { "name": "Hacker News Show", "url": "https://news.ycombinator.com/show", "type": "tech-early", "enabled": true, "weight": 0.8 },
+    { "name": "Starter Story", "url": "https://www.starterstory.com/ideas", "type": "model-breakdown", "enabled": true, "weight": 0.8 },
+    { "name": "There's An AI For That", "url": "https://theresanaiforthat.com/", "type": "ai-tools", "enabled": true, "weight": 0.7 },
+    { "name": "Reddit r/SaaS", "url": "https://www.reddit.com/r/SaaS/top/", "type": "community", "enabled": true, "weight": 0.6 },
+    { "name": "Reddit r/SideProject", "url": "https://www.reddit.com/r/SideProject/top/", "type": "community", "enabled": true, "weight": 0.6 },
+    { "name": "Trends.vc", "url": "https://trends.vc/", "type": "trend-reports", "enabled": false, "weight": 0.5 }
+  ],
+  "searchQueries": [
+    "indie hacker reached $10k MRR 2026",
+    "micro SaaS profitable solo founder",
+    "AI tool wrapper making money",
+    "productized service automation business",
+    "no-code business idea revenue"
+  ]
+}

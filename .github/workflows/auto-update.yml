@@ -1,0 +1,44 @@
+name: 自动调研更新 (Compound Discovery)
+
+# 复利飞轮的定时触发器：每周一自动跑调研引擎，发现新项目并提交。
+on:
+  schedule:
+    - cron: '0 1 * * 1'   # 每周一 01:00 UTC
+  workflow_dispatch:       # 也可在 Actions 页手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装依赖
+        working-directory: automation
+        run: npm install
+
+      - name: 运行调研引擎
+        working-directory: automation
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # ⚠️ 需在仓库 Settings → Secrets 配置
+          RESEARCH_MODEL: claude-sonnet-4-6
+          TARGET_NEW: '3'
+        run: node research.mjs
+
+      - name: 提交更新
+        run: |
+          git config user.name  "compound-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: 自动更新调研项目数据 ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "无数据变更，跳过提交。"
+          fi
