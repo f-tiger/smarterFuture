@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free AI Listing Description Generator | ListingLift</title>
+<meta name="description" content="Free AI listing description generator for real-estate agents. Enter the property details and get a ready-to-use AI prompt + an instant draft. No signup, works with any AI."/>
+<link rel="canonical" href="https://f-tiger.github.io/smarterFuture/launch/ai-realtor/tool.html"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Free AI Listing Description Generator"/>
+<meta property="og:description" content="Enter property details → get a ready-to-use AI prompt + instant draft. Free."/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"AI Listing Description Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free AI listing description generator for real-estate agents."}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="index.html">Listing<span>Lift</span></a>
+  <nav><a href="index.html#guides">Guides</a><a href="free-prompts.html">Free prompts</a><a href="toolkit.html">Toolkit</a><a href="tool.html">Free tool</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="badge">Free · No signup · Works with any AI</div>
+  <h1>AI Listing Description <span style="color:#2563eb">Generator</span></h1>
+  <p class="sub">Enter the property details. Get a ready-to-paste AI prompt <em>and</em> an instant starter draft in seconds. Refine, review, and ship.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="section">
+    <form id="toolForm">
+      <div class="form-grid">
+        <div class="field full"><label for="f_address">Property address / name</label><input id="f_address" placeholder="123 Maple St, Austin TX"/></div>
+        <div class="field"><label for="f_type">Property type</label>
+          <select id="f_type"><option>Single-family home</option><option>Condo / Apartment</option><option>Townhouse</option><option>Luxury home</option><option>Rental</option><option>New construction</option><option>Fixer-upper / Investment</option><option>Land</option></select>
+        </div>
+        <div class="field"><label for="f_tone">Tone</label>
+          <select id="f_tone"><option>Warm</option><option>Luxury</option><option>Investor</option><option>Concise</option></select>
+        </div>
+        <div class="field"><label for="f_beds">Beds</label><input id="f_beds" inputmode="numeric" placeholder="3"/></div>
+        <div class="field"><label for="f_baths">Baths</label><input id="f_baths" inputmode="decimal" placeholder="2"/></div>
+        <div class="field"><label for="f_sqft">Size (sqft)</label><input id="f_sqft" inputmode="numeric" placeholder="1,650"/></div>
+        <div class="field"><label for="f_area">Neighborhood highlights</label><input id="f_area" placeholder="parks, top schools, walkable downtown"/></div>
+        <div class="field full"><label for="f_features">Standout features (comma-separated)</label><textarea id="f_features" placeholder="renovated kitchen, large backyard, natural light, 2-car garage"></textarea></div>
+      </div>
+      <p style="margin-top:14px"><button class="btn blue" type="submit">Generate &rarr;</button></p>
+    </form>
+
+    <div id="results" style="display:none">
+      <div class="outhead"><h3 style="margin:0">📋 Ready-to-use AI prompt</h3><button class="copybtn" data-copy="outPrompt">Copy</button></div>
+      <div class="promptbox" id="outPrompt"></div>
+      <p class="note">Paste this into ChatGPT, Claude, or Gemini for the best result.</p>
+
+      <div class="outhead"><h3 style="margin:0">✍️ Instant starter draft</h3><button class="copybtn" data-copy="outDraft">Copy</button></div>
+      <div class="promptbox" id="outDraft"></div>
+      <p class="note">⚠️ A quick template draft — always review for accuracy and fair-housing compliance before publishing.</p>
+
+      <div class="aff" style="background:#eff6ff;border-color:#bfdbfe">
+        <h3>Want this in one click — plus 60 prompts &amp; templates? 🧰</h3>
+        <p>The <strong>AI Realtor Toolkit</strong> turns property facts into copy like this instantly. <a class="btn blue" data-buy href="toolkit.html" style="margin-left:6px">Get the Toolkit — <span data-price>$29</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot"></div>
+
+  <section class="section" style="text-align:center">
+    <h2>Get notified when the one-click app launches</h2>
+    <form class="cta-form" data-capture style="justify-content:center;margin:0 auto">
+      <input type="email" required placeholder="you@brokerage.com" aria-label="email"/>
+      <button class="btn" type="submit">加入早鸟名单</button>
+    </form>
+    <div class="note" data-msg></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <div>© <span data-brand>ListingLift</span> · Practical AI for real-estate agents · Not legal advice.</div>
+  <div><a href="index.html">Home</a> · <a href="toolkit.html">Toolkit</a></div>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="tool.js"></script>
+</body>
+</html>

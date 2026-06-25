@@ -49,3 +49,12 @@ footer a{color:#cbd5e1}
 .inside li{margin-bottom:8px}
 @media(max-width:640px){.inside{columns:1}}
 .guarantee{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:16px;text-align:center;color:#166534;font-size:14px;margin:20px auto;max-width:560px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.form-grid{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-size:13px;color:var(--muted);font-weight:600}
+.field input,.field select,.field textarea{padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;font-family:inherit;width:100%;background:#fff}
+.field textarea{min-height:72px;resize:vertical}
+.field.full{grid-column:1/-1}
+.outhead{display:flex;align-items:center;justify-content:space-between;margin:18px 0 6px}
+.copybtn{background:var(--blue);color:#fff;border:0;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer}
