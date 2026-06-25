@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free Listing Description "Roast & Rewrite" Checker | ListingLift</title>
+<meta name="description" content="Paste your real-estate listing and get an instant score: clichés, fair-housing red flags, weak openers, missing CTA — plus a one-click AI rewrite prompt. Free, no signup."/>
+<link rel="canonical" href="https://f-tiger.github.io/smarterFuture/launch/ai-realtor/roast-tool.html"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Free Listing Roast & Rewrite Checker for Agents"/>
+<meta property="og:description" content="Paste your listing, get an instant score + fair-housing check + rewrite prompt. Free."/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Listing Description Roast & Rewrite Checker","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free listing description analyzer and rewrite prompt for real-estate agents."}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="index.html">Listing<span>Lift</span></a>
+  <nav><a href="index.html#guides">Guides</a><a href="tools.html">Free tools</a><a href="toolkit.html">Toolkit</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="badge">Free · No signup · Instant</div>
+  <h1>Roast my <span style="color:#2563eb">listing</span> 🔥</h1>
+  <p class="sub">Paste your listing description. Get an instant score — clichés, fair-housing red flags, weak openers, missing CTA — plus a one-click prompt to rewrite it with any AI.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="section">
+    <form id="roastForm">
+      <div class="field full"><label for="r_text">Paste your current listing description</label>
+        <textarea id="r_text" style="min-height:150px" placeholder="Welcome to this charming, cozy dream home that won't last! Perfect for families..."></textarea>
+      </div>
+      <p style="margin-top:14px"><button class="btn blue" type="submit">Roast it &rarr;</button></p>
+    </form>
+
+    <div id="results" style="display:none">
+      <div style="text-align:center;margin:10px 0 6px"><span style="font-size:48px;font-weight:800" id="scoreNum">—</span><span style="font-size:20px;color:#64748b">/100</span></div>
+      <ul style="list-style:none;padding:0;font-size:15px" id="findings"></ul>
+      <div class="outhead"><h3 style="margin:0">🤖 One-click rewrite prompt (paste into any AI)</h3><button class="copybtn" data-copy="outPrompt">Copy</button></div>
+      <div class="promptbox" id="outPrompt"></div>
+      <p class="note">⚠️ Fair-housing flags are heuristic reminders, not legal advice — always review with your broker/compliance.</p>
+
+      <div class="aff" style="background:#eff6ff;border-color:#bfdbfe">
+        <h3>Want listings that score 90+ every time? 🧰</h3>
+        <p>The <strong>AI Realtor Toolkit</strong> has 8 listing frameworks + 60 prompts + a fair-housing checklist. <a class="btn blue" data-buy href="toolkit.html" style="margin-left:6px">Get it — <span data-price>$29</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot"></div>
+
+  <section class="section" style="text-align:center">
+    <h2>Get the one-click app when it launches</h2>
+    <form class="cta-form" data-capture style="justify-content:center;margin:0 auto">
+      <input type="email" required placeholder="you@brokerage.com" aria-label="email"/>
+      <button class="btn" type="submit">加入早鸟名单</button>
+    </form>
+    <div class="note" data-msg></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <div>© <span data-brand>ListingLift</span> · Practical AI for real-estate agents · Not legal advice.</div>
+  <div><a href="tools.html">Free tools</a> · <a href="toolkit.html">Toolkit</a></div>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="roast-tool.js"></script>
+</body>
+</html>
