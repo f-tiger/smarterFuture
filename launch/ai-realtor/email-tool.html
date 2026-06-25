@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free AI Real Estate Follow-Up Email Generator | ListingLift</title>
+<meta name="description" content="Free AI email generator for real-estate agents: new lead, post-showing, price drop, past-client and open-house follow-ups. Get a ready-to-send email + an AI prompt. No signup."/>
+<link rel="canonical" href="https://f-tiger.github.io/smarterFuture/launch/ai-realtor/email-tool.html"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Free AI Real Estate Follow-Up Email Generator"/>
+<meta property="og:description" content="Pick a scenario, fill the blanks, get a ready-to-send follow-up email. Free."/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"AI Real Estate Follow-Up Email Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free follow-up email generator for real-estate agents."}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="index.html">Listing<span>Lift</span></a>
+  <nav><a href="index.html#guides">Guides</a><a href="tool.html">Listing tool</a><a href="email-tool.html">Email tool</a><a href="toolkit.html">Toolkit</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="badge">Free · No signup · Works with any AI</div>
+  <h1>AI Follow-Up <span style="color:#2563eb">Email Generator</span></h1>
+  <p class="sub">Pick a scenario, fill in a few blanks, and get a ready-to-send follow-up email — plus a prompt to refine it in your favorite AI.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="section">
+    <form id="emailForm">
+      <div class="form-grid">
+        <div class="field full"><label for="e_scenario">Scenario</label>
+          <select id="e_scenario">
+            <option value="new-lead">New lead — first touch</option>
+            <option value="post-showing">After a showing</option>
+            <option value="price-drop">Price improvement</option>
+            <option value="past-client">Past-client check-in</option>
+            <option value="open-house">Open house invite</option>
+          </select>
+        </div>
+        <div class="field"><label for="e_first">Client first name</label><input id="e_first" placeholder="Jordan"/></div>
+        <div class="field"><label for="e_property">Property (address / name)</label><input id="e_property" placeholder="123 Maple St"/></div>
+        <div class="field"><label for="e_area">Area / neighborhood</label><input id="e_area" placeholder="East Austin"/></div>
+        <div class="field" id="dateWrap"><label for="e_date">Open house date &amp; time</label><input id="e_date" placeholder="Sat, 1–3pm"/></div>
+        <div class="field"><label for="e_agent">Your name</label><input id="e_agent" placeholder="Alex Rivera"/></div>
+        <div class="field"><label for="e_broker">Brokerage</label><input id="e_broker" placeholder="Rivera Realty"/></div>
+        <div class="field"><label for="e_tone">Tone</label><select id="e_tone"><option>warm</option><option>professional</option><option>casual</option></select></div>
+      </div>
+      <p style="margin-top:14px"><button class="btn blue" type="submit">Generate email &rarr;</button></p>
+    </form>
+
+    <div id="results" style="display:none">
+      <div class="outhead"><h3 style="margin:0">✉️ Subject</h3><button class="copybtn" data-copy="outSubject">Copy</button></div>
+      <div class="promptbox" id="outSubject"></div>
+      <div class="outhead"><h3 style="margin:0">📧 Ready-to-send email</h3><button class="copybtn" data-copy="outEmail">Copy</button></div>
+      <div class="promptbox" id="outEmail"></div>
+      <p class="note">⚠️ Review and personalize before sending. Avoid fair-housing-sensitive language.</p>
+      <div class="outhead"><h3 style="margin:0">🤖 Prompt to refine in any AI</h3><button class="copybtn" data-copy="outPrompt">Copy</button></div>
+      <div class="promptbox" id="outPrompt"></div>
+
+      <div class="aff" style="background:#eff6ff;border-color:#bfdbfe">
+        <h3>Want 15 done-for-you email templates + 60 prompts? 🧰</h3>
+        <p>The <strong>AI Realtor Toolkit</strong> covers every follow-up scenario. <a class="btn blue" data-buy href="toolkit.html" style="margin-left:6px">Get the Toolkit — <span data-price>$29</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot"></div>
+
+  <section class="section" style="text-align:center">
+    <h2>Get notified when the one-click app launches</h2>
+    <form class="cta-form" data-capture style="justify-content:center;margin:0 auto">
+      <input type="email" required placeholder="you@brokerage.com" aria-label="email"/>
+      <button class="btn" type="submit">加入早鸟名单</button>
+    </form>
+    <div class="note" data-msg></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <div>© <span data-brand>ListingLift</span> · Practical AI for real-estate agents · Not legal advice.</div>
+  <div><a href="index.html">Home</a> · <a href="tool.html">Listing tool</a> · <a href="toolkit.html">Toolkit</a></div>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="email-tool.js"></script>
+</body>
+</html>
