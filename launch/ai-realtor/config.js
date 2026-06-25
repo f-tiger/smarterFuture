@@ -22,5 +22,8 @@ window.SITE_CONFIG = {
   },
 
   // 4) 收款/正式产品页（若产品已上线收款，填外部 URL，否则走等待名单）
-  productCheckoutUrl: ""        // 例: "https://buy.stripe.com/xxxx"
+  productCheckoutUrl: "",       // 例: "https://buy.stripe.com/xxxx"
+
+  // 5) 数据测量（强烈建议尽早开，用来看流量与转化）
+  gaMeasurementId: ""           // Google Analytics 4，例: "G-XXXXXXXXXX"，留空=不加载
 };

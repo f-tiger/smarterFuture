@@ -22,6 +22,8 @@
 | **展示广告** | 流量起来后申请 Google AdSense，拿 `ca-pub-xxxx` | `adsenseClient` |
 | **联盟变现** | 申请相关 AI 工具的联盟计划，拿专属链接 | `affiliate.aiToolkit` |
 | **产品收款**（可选） | Stripe/Gumroad/Lemon Squeezy 建收款页 | `productCheckoutUrl` |
+| **数据分析**（建议尽早） | 注册 Google Analytics 4，拿 `G-xxxx` | `gaMeasurementId` |
+| **搜索收录** | [Google Search Console](https://search.google.com/search-console) 验证域名并提交 `sitemap.xml` | （在 GSC 网页操作，无需改代码） |
 
 > 在你填之前，站点处于**演示模式**：表单可点但不真正写库、广告显示占位、联盟是示例链接——可安全公开演示。
 

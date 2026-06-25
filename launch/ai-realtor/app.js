@@ -2,6 +2,19 @@
 (function () {
   var C = window.SITE_CONFIG || {};
 
+  // Google Analytics 4（配置 gaMeasurementId 后自动加载）
+  if (C.gaMeasurementId) {
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(C.gaMeasurementId);
+    document.head.appendChild(ga);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', C.gaMeasurementId);
+  }
+
   // 品牌占位填充
   document.querySelectorAll('[data-brand]').forEach(function (e) { e.textContent = C.brand || 'ListingLift'; });
   document.querySelectorAll('[data-product]').forEach(function (e) { e.textContent = C.productName || 'AI Listing Writer'; });
