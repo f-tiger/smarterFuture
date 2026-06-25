@@ -1,0 +1,5 @@
+# Cloudflare Pages 配置（config-as-code）
+# 纯静态站点：无构建步骤，发布目录即仓库根目录。
+name = "compound-discovery"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "."

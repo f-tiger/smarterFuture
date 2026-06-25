@@ -16,7 +16,7 @@
 
 2. **轻量化 + Claude 快速复制**
    - 前端零构建：纯静态 `index.html` + `project.html` + Tailwind CDN + 原生 JS 读 JSON。
-   - 任意静态托管即可上线（Netlify / Vercel / GitHub Pages）。
+   - 任意静态托管即可上线（**Cloudflare Pages** / GitHub Pages / Vercel）。
    - 每个项目都标注 **🤖 Claude 可自动完成** vs **⚠️ 必须人工介入** 的步骤。
 
 3. **分级落地清单**
@@ -62,10 +62,36 @@ DRY_RUN=1 node research.mjs                # 仅预览，不写文件
 
 1. 仓库 **Settings → Secrets and variables → Actions** 添加 `ANTHROPIC_API_KEY`。
 2. `.github/workflows/auto-update.yml` 每周一自动运行调研引擎并提交数据（也可手动触发）。
-3. 接 Netlify/Vercel 到本仓库，`data/projects.json` 一变更即自动重新部署。
+3. 接 **Cloudflare Pages** 到本仓库（见下），`data/projects.json` 一变更即自动重新部署。
 
 ```
 定时 → 调研(Claude+搜索) → 写数据 → 自动部署 → 你挑1个复制 → 现金流再投入 → 复利
+```
+
+---
+
+## ☁️ 部署到 Cloudflare Pages（推荐，免费额度充足）
+
+> 你的 Netlify 免费额度已用完，改用 Cloudflare Pages。本站是纯静态、零构建，最适合 Pages。
+
+**方式 A · Git 集成（推荐，零额外密钥，自动部署）**
+
+1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**。
+2. 选择本仓库 `f-tiger/smarterFuture`，分支选 `claude/compound-growth-website-91uwq4`（或合并到 `main` 后选 `main`）。
+3. 构建设置：
+   - **Framework preset**：`None`
+   - **Build command**：留空
+   - **Build output directory**：`/`（根目录）
+4. 保存并部署。之后每次 push（包括机器人每周自动提交的数据）都会**自动重新部署**，闭环成立。
+
+> 仓库已含 `wrangler.toml`（`pages_build_output_dir = "."`）与 `_headers`，Pages 会自动识别缓存策略。
+
+**方式 B · 命令行直接上传（可选）**
+
+```bash
+npm install -g wrangler
+wrangler login
+wrangler pages deploy . --project-name compound-discovery
 ```
 
 ---
@@ -103,7 +129,8 @@ DRY_RUN=1 node research.mjs                # 仅预览，不写文件
 │   ├── sources.json          # 信息源配置
 │   └── package.json
 ├── .github/workflows/auto-update.yml   # 每周定时调研
-└── netlify.toml              # 静态部署配置
+├── wrangler.toml             # Cloudflare Pages 配置
+└── _headers                  # Cloudflare Pages 缓存策略
 ```
 
 ---

@@ -1,0 +1,8 @@
+# Cloudflare Pages 原生 headers 配置（也兼容 Netlify）
+# 数据文件缓存 5 分钟，保证自动更新后较快生效
+/data/*
+  Cache-Control: public, max-age=300
+
+# 静态资源缓存
+/assets/*
+  Cache-Control: public, max-age=3600
