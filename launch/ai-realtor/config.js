@@ -24,12 +24,12 @@ window.SITE_CONFIG = {
   // 4) 收款/正式产品页（数字产品《AI Realtor Toolkit》的收款链接）
   //    把 product-assets/ai-realtor-toolkit 打包上传到 Gumroad/Lemon Squeezy，拿到购买链接填这里。
   //    留空 = 购买按钮回退到「加入早鸟名单」。详见 RUNBOOK.md。
-  productCheckoutUrl: "",       // 例: "https://yourname.gumroad.com/l/ai-realtor-toolkit"
+  productCheckoutUrl: "https://payhip.com/b/4rDt0",   // AI Realtor Toolkit（Payhip）
   productPrice: "$29",          // 售价展示
   productPriceOld: "$49",       // 划线原价（可留空）
 
   // 4b) 第二个数字产品《90-Day Real Estate Content Calendar》
-  product2CheckoutUrl: "",      // 例: "https://yourname.gumroad.com/l/content-calendar"
+  product2CheckoutUrl: "https://payhip.com/b/clwHo",  // 90-Day Content Calendar（Payhip）
   product2Price: "$19",
   product2PriceOld: "$29",
 
