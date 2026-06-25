@@ -11,8 +11,17 @@
 
 1. **自动调研 + 持续更新**
    - `automation/research.mjs` 调用 Claude API（带 Web 搜索）扫描 Indie Hackers / Product Hunt / Hacker News 等海外源（见 `automation/sources.json`）。
-   - 产出含 **竞对分析、ROI、回本周期、商业模式、一页路演** 的结构化数据，写入 `data/projects.json`。
+   - 产出含 **竞对分析、ROI、回本周期、商业模式、一页路演、完整用户营销分析** 的结构化数据，写入 `data/projects.json`。
    - GitHub Actions 每周自动运行并提交（`.github/workflows/auto-update.yml`），形成**自动闭环**。
+
+   **营销侧也自动化**：每个项目都含完整营销分析（用户画像 / AARRR 漏斗 / 渠道 CAC·转化·自动化程度 / 内容引擎 / 增长循环 / KPI / 营销自动化 Playbook）。
+   `automation/marketing.mjs` 还能按项目**自动生成整套可用营销物料**：
+   ```bash
+   cd automation && npm install
+   export ANTHROPIC_API_KEY=sk-ant-...
+   node marketing.mjs niche-ai-wrapper   # 生成落地页文案/10条社媒/5封邮件序列/20个SEO词/5组广告
+   node marketing.mjs --all              # 为所有项目生成，写入 data/marketing-kits/
+   ```
 
 2. **轻量化 + Claude 快速复制**
    - 前端零构建：纯静态 `index.html` + `project.html` + Tailwind CDN + 原生 JS 读 JSON。

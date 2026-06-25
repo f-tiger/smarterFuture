@@ -1,12 +1,12 @@
 {
   "siteName": "复利发现引擎",
-  "tagline": "持续发现海外高潜力创业项目 · 自动分析 · 分级落地",
+  "tagline": "持续发现海外高潜力创业项目 · 自动分析 · 营销自动化 · 分级落地",
   "lastUpdated": "2026-06-25",
-  "projectCount": 6,
+  "projectCount": 12,
   "goal": "2026 年底前跑通至少一个可盈利的商业闭环",
   "stats": {
-    "aiAuto": 4,
-    "aiHuman": 1,
+    "aiAuto": 8,
+    "aiHuman": 3,
     "manual": 1
   }
 }
