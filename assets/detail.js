@@ -160,5 +160,58 @@ fetch('data/projects.json')
     const p = list.find(x => x.id === id);
     if (!p) { document.getElementById('content').innerHTML = '<p class="text-rose-500">未找到该项目。</p>'; return; }
     render(p);
+    loadKit(p.id);
   })
   .catch(err => { document.getElementById('content').innerHTML = `<p class="text-rose-500">加载失败：${err.message}</p>`; });
+
+// 若存在自动生成的营销物料(data/marketing-kits/<id>.json)，渲染出来
+function loadKit(pid) {
+  fetch(`data/marketing-kits/${pid}.json`)
+    .then(r => (r.ok ? r.json() : null))
+    .then(kit => { if (kit) renderKit(kit); })
+    .catch(() => {});
+}
+
+function renderKit(k) {
+  const lc = k.landingCopy || {};
+  const social = (k.socialPosts || []).slice(0, 6).map(s => `
+    <div class="border border-slate-200 rounded-lg p-3 text-sm">
+      <div class="text-xs text-slate-400 mb-1">D${esc(s.day)} · ${esc(s.platform)}</div>${esc(s.text)}
+      <div class="text-xs text-brandblue mt-1">${(s.hashtags || []).map(esc).join(' ')}</div>
+    </div>`).join('');
+  const emails = (k.emailSequence || []).map(e => `
+    <div class="flex gap-3 py-2 border-b border-slate-100 last:border-0">
+      <div class="w-6 h-6 shrink-0 rounded-full bg-slate-100 text-xs flex items-center justify-center font-bold">${esc(e.step)}</div>
+      <div class="text-sm"><div class="font-medium">${esc(e.subject)}</div><div class="text-slate-500 text-xs mt-0.5">${esc(e.body)}</div></div>
+    </div>`).join('');
+  const kws = (k.seoKeywords || []).map(w => `<span class="text-xs bg-slate-100 rounded px-2 py-1">${esc(w.keyword)} <span class="text-slate-400">·${esc(w.difficulty)}</span></span>`).join(' ');
+  const ads = (k.adVariations || []).map(a => `
+    <div class="border border-slate-200 rounded-lg p-3">
+      <div class="text-sm font-semibold">${esc(a.headline)}</div>
+      <div class="text-sm text-slate-600">${esc(a.body)}</div>
+      <div class="text-xs text-brandgreen mt-1">角度：${esc(a.angle)}</div>
+    </div>`).join('');
+
+  const html = `
+    <p class="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-2 mb-3">${esc(k.note)}</p>
+    <div class="mb-4"><div class="text-sm font-semibold mb-2">🖥️ 落地页文案</div>
+      <div class="bg-slate-50 rounded-lg p-3 text-sm">
+        <div class="font-bold">${esc(lc.hero)}</div>
+        <div class="text-slate-500 mt-1">${esc(lc.subhead)}</div>
+        <ul class="list-disc pl-4 mt-2">${(lc.bullets || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+        <div class="mt-2"><span class="inline-block bg-ink text-white text-xs px-3 py-1 rounded-full">${esc(lc.cta)}</span></div>
+      </div>
+    </div>
+    <div class="mb-4"><div class="text-sm font-semibold mb-2">📱 社媒帖（节选 6/${(k.socialPosts || []).length}）</div><div class="grid md:grid-cols-2 gap-2">${social}</div></div>
+    <div class="mb-4"><div class="text-sm font-semibold mb-2">✉️ 邮件序列（${(k.emailSequence || []).length} 封）</div>${emails}</div>
+    <div class="mb-4"><div class="text-sm font-semibold mb-2">🔑 SEO 选题（${(k.seoKeywords || []).length} 个）</div><div class="flex flex-wrap gap-1">${kws}</div></div>
+    <div class="mb-2"><div class="text-sm font-semibold mb-2">📣 广告创意变体（${(k.adVariations || []).length} 组）</div><div class="grid md:grid-cols-2 gap-2">${ads}</div></div>`;
+
+  const sec = document.createElement('section');
+  sec.className = 'bg-white rounded-2xl border-2 border-brandgreen/40 p-5 mb-4';
+  sec.innerHTML = `<h2 class="text-lg font-bold mb-3">🎁 自动生成的营销物料 <span class="text-xs font-normal text-brandgreen">（marketing.mjs 产出）</span></h2>${html}`;
+  // 插到落地清单之前；找不到就追加到末尾
+  const content = document.getElementById('content');
+  const back = content.querySelector('.text-center.my-6');
+  if (back) content.insertBefore(sec, back); else content.appendChild(sec);
+}

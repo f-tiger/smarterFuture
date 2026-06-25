@@ -1,0 +1,69 @@
+{
+  "projectId": "niche-ai-wrapper",
+  "projectName": "垂直场景 AI 工具 (Wrapper)",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料样例（此份为示范，配置 ANTHROPIC_API_KEY 后可一键为任意项目生成）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "Stop wrestling with ChatGPT prompts. Get perfect listing copy in 30 seconds.",
+    "subhead": "A purpose-built AI workflow for real-estate agents — paste the property details, pick a tone, and ship MLS-ready descriptions, emails, and social captions instantly.",
+    "bullets": [
+      "Built-in best-practice prompts — no prompt engineering required",
+      "On-brand, fair-housing-compliant copy every time",
+      "Export to MLS, email, and social with one click"
+    ],
+    "cta": "Generate my first listing free",
+    "faq": [
+      { "q": "Do I need to know how to write prompts?", "a": "No. Just paste the property facts and choose a tone — the workflow handles the rest." },
+      { "q": "Is the copy compliant?", "a": "Templates are built to avoid fair-housing red flags, and you can review every draft before publishing." },
+      { "q": "Can I cancel anytime?", "a": "Yes, it's month-to-month with a free tier so you can try before you pay." }
+    ]
+  },
+  "socialPosts": [
+    { "platform": "X", "day": 1, "text": "Real-estate agents: you're spending 45 min/listing writing descriptions. We got it to 30 seconds. Here's how 👇", "hashtags": ["#realestate", "#proptech"] },
+    { "platform": "LinkedIn", "day": 1, "text": "Most agents use ChatGPT for listings but hate the generic output. The fix isn't a better prompt — it's a workflow that already knows what a great listing looks like.", "hashtags": ["#realestate", "#AI"] },
+    { "platform": "X", "day": 2, "text": "Before/after: a raw MLS dump → a listing that sells. Same facts, 30 seconds, zero prompt tweaking.", "hashtags": ["#realestate"] },
+    { "platform": "X", "day": 3, "text": "Fair-housing compliance is the #1 reason agents fear AI copy. We bake the guardrails in so you review, not rewrite.", "hashtags": ["#realestate", "#compliance"] },
+    { "platform": "LinkedIn", "day": 4, "text": "Indie build update: 120 agents on the free tier, 18 converted to paid this week. Vertical > general-purpose. Every time.", "hashtags": ["#buildinpublic"] },
+    { "platform": "X", "day": 5, "text": "Your listing, 3 tones: Luxury, Cozy, Investor. Pick one, ship it. (demo clip)", "hashtags": ["#realestate", "#proptech"] },
+    { "platform": "X", "day": 6, "text": "We don't sell 'AI'. We sell the 44 minutes you get back per listing.", "hashtags": ["#realestate"] },
+    { "platform": "LinkedIn", "day": 7, "text": "Case study: a solo agent in Austin listed 9 properties last week and wrote zero descriptions by hand. Here's her workflow.", "hashtags": ["#realestate", "#casestudy"] },
+    { "platform": "X", "day": 7, "text": "Free tier, no card. Paste a property, watch it write. If it doesn't beat your last listing, don't pay us.", "hashtags": ["#realestate"] },
+    { "platform": "X", "day": 8, "text": "Reply with a property address and I'll generate a listing live. Let's go 🧵", "hashtags": ["#realestate", "#AI"] }
+  ],
+  "emailSequence": [
+    { "step": 1, "subject": "Your first listing is ready 👇", "body": "Welcome! You're 30 seconds away from your first AI-written listing. Paste any property's details, pick a tone, and hit generate. Reply here if anything's unclear — a real human reads these." },
+    { "step": 2, "subject": "The 3 tones most agents use", "body": "Luxury for high-end, Cozy for family homes, Investor for cash-flow buyers. Match the tone to the buyer and watch engagement climb. Try all three on your next listing." },
+    { "step": 3, "subject": "Don't get flagged for fair housing", "body": "AI copy can accidentally use risky language. Our templates avoid the common red flags — but always give each draft a 10-second review. Here's a quick checklist." },
+    { "step": 4, "subject": "She listed 9 homes, wrote 0 by hand", "body": "A solo agent in Austin runs her entire listing workflow through the tool. Here's exactly how she does it — and how you can copy it this week." },
+    { "step": 5, "subject": "Ready to go unlimited?", "body": "You've used your free generations. Upgrade to Pro for unlimited listings, saved brand voice, and one-click MLS export — less than the cost of one wasted hour. Upgrade here." }
+  ],
+  "seoKeywords": [
+    { "keyword": "ai real estate listing description generator", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "how to write a real estate listing that sells", "intent": "informational", "difficulty": "medium" },
+    { "keyword": "mls description examples", "intent": "informational", "difficulty": "low" },
+    { "keyword": "real estate listing copywriting tool", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "chatgpt prompts for real estate agents", "intent": "informational", "difficulty": "medium" },
+    { "keyword": "fair housing compliant listing language", "intent": "informational", "difficulty": "low" },
+    { "keyword": "best ai tools for realtors 2026", "intent": "commercial", "difficulty": "high" },
+    { "keyword": "property description writer ai", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "luxury listing description template", "intent": "informational", "difficulty": "low" },
+    { "keyword": "real estate social media captions", "intent": "informational", "difficulty": "low" },
+    { "keyword": "open house email template", "intent": "informational", "difficulty": "low" },
+    { "keyword": "how to describe a small apartment for rent", "intent": "informational", "difficulty": "low" },
+    { "keyword": "ai listing generator free", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "real estate marketing automation", "intent": "commercial", "difficulty": "high" },
+    { "keyword": "realtor productivity tools", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "write listing description from photos", "intent": "informational", "difficulty": "medium" },
+    { "keyword": "real estate copywriting services alternative", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "investor property description example", "intent": "informational", "difficulty": "low" },
+    { "keyword": "ai for solo real estate agents", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "how long should a listing description be", "intent": "informational", "difficulty": "low" }
+  ],
+  "adVariations": [
+    { "headline": "Listings in 30 seconds", "body": "Paste the facts, pick a tone, ship MLS-ready copy. Free to try.", "angle": "time-saving" },
+    { "headline": "Stop fighting ChatGPT", "body": "A workflow built for agents — no prompt engineering, just great listings.", "angle": "ease-of-use" },
+    { "headline": "Compliant copy, every time", "body": "Fair-housing guardrails built in. Review, don't rewrite.", "angle": "risk-reduction" },
+    { "headline": "Write 0 listings by hand", "body": "Solo agents are listing 9+ homes a week with zero manual writing.", "angle": "social-proof" },
+    { "headline": "Get 44 minutes back per listing", "body": "Same facts. Better copy. A fraction of the time. Try it free.", "angle": "roi" }
+  ]
+}

@@ -22,6 +22,7 @@
    node marketing.mjs niche-ai-wrapper   # 生成落地页文案/10条社媒/5封邮件序列/20个SEO词/5组广告
    node marketing.mjs --all              # 为所有项目生成，写入 data/marketing-kits/
    ```
+   生成的物料写入 `data/marketing-kits/<id>.json`，**详情页会自动加载并展示**（仓库已附 `niche-ai-wrapper` 的样例可直接在线查看）。
 
 2. **轻量化 + Claude 快速复制**
    - 前端零构建：纯静态 `index.html` + `project.html` + Tailwind CDN + 原生 JS 读 JSON。
