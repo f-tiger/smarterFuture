@@ -44,7 +44,7 @@
       slot.appendChild(ins);
       try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
     } else {
-      slot.textContent = '广告位（配置 adsenseClient 后自动启用）';
+      slot.style.display = 'none';
     }
   });
 
@@ -67,7 +67,7 @@
       } else {
         el.setAttribute('href', '#waitlist');
         var hint = el.getAttribute('data-buy-hint');
-        if (hint) { var h = document.querySelector(hint); if (h) h.textContent = '（演示：配置收款链接后此按钮直达收款页）'; }
+        if (hint) { var h = document.querySelector(hint); if (h) h.textContent = ''; }
       }
       el.addEventListener('click', function () { track('begin_checkout', { item_name: name, value: value, currency: 'USD' }); });
     });
@@ -85,23 +85,23 @@
       if (!email) { return; }
       if (!C.emailEndpoint) {
         track('generate_lead', { source: 'listinglift', mode: 'demo' });
-        if (msg) { msg.textContent = '✅ 演示模式：已记录「' + email + '」（配置 emailEndpoint 后将真正写入名单）。'; msg.style.color = '#16a34a'; }
+        if (msg) { msg.textContent = "✅ You're on the list — we'll email you when it opens!"; msg.style.color = '#16a34a'; }
         form.reset();
         return;
       }
-      var btn = form.querySelector('button'); if (btn) { btn.disabled = true; btn.textContent = '提交中…'; }
+      var btn = form.querySelector('button'); if (btn) { btn.disabled = true; btn.textContent = "Submitting…"; }
       fetch(C.emailEndpoint, {
         method: 'POST',
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email, source: 'listinglift' })
       }).then(function (r) {
         if (msg) {
-          if (r.ok) { track('generate_lead', { source: 'listinglift' }); msg.textContent = '✅ 已加入早鸟名单，留意你的邮箱！'; msg.style.color = '#16a34a'; form.reset(); }
-          else { msg.textContent = '提交失败，请稍后再试。'; msg.style.color = '#e11d48'; }
+          if (r.ok) { track('generate_lead', { source: 'listinglift' }); msg.textContent = "✅ You're on the list — check your inbox!"; msg.style.color = '#16a34a'; form.reset(); }
+          else { msg.textContent = "Something went wrong — please try again."; msg.style.color = '#e11d48'; }
         }
       }).catch(function () {
-        if (msg) { msg.textContent = '网络错误，请稍后再试。'; msg.style.color = '#e11d48'; }
-      }).finally(function () { if (btn) { btn.disabled = false; btn.textContent = '加入早鸟名单'; } });
+        if (msg) { msg.textContent = "Network error — please try again."; msg.style.color = '#e11d48'; }
+      }).finally(function () { if (btn) { btn.disabled = false; btn.textContent = "Get early access"; } });
     });
   });
 })();
