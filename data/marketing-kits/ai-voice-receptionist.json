@@ -1,0 +1,72 @@
+{
+  "projectId": "ai-voice-receptionist",
+  "projectName": "AI 语音前台/接线员",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。本项目涉及电话录音与隐私，正式投放前请核对各州双方同意录音法规(如加州/佛州)及医疗诊所HIPAA口径。",
+  "landingCopy": {
+    "hero": "Never miss another customer call. Your AI receptionist answers 24/7.",
+    "subhead": "An always-on AI phone agent for dental offices, clinics, restaurants, and home-services pros — it answers every call, books appointments into your calendar, and never takes a sick day. Starts at $199/month.",
+    "bullets": [
+      "Answers 100% of calls in under 2 rings — nights, weekends, and lunch rushes included",
+      "Books, reschedules, and confirms appointments straight into Google Calendar, Calendly, or your PMS",
+      "Sounds natural and on-brand — callers get a warm, professional voice, not a clunky robot",
+      "Texts you a summary and recording after every call so nothing falls through the cracks",
+      "Live in 48 hours — no new hardware, just forward your existing number"
+    ],
+    "cta": "Get my AI receptionist (free 7-day trial)",
+    "faq": [
+      { "q": "Does it really sound like a person?", "a": "Yes. Most callers don't realize they're talking to an AI. It handles interruptions, accents, and follow-up questions naturally — and hands off to a human when a call needs one." },
+      { "q": "Can it book appointments into my system?", "a": "It connects to Google Calendar, Calendly, and popular dental/clinic scheduling systems, so bookings land directly on your calendar with no double-entry." },
+      { "q": "What happens to my current phone number?", "a": "Nothing changes for your customers. You simply forward your existing line to your AI receptionist, and you can switch it off anytime." },
+      { "q": "Is it compliant for a medical office?", "a": "We support HIPAA-aligned configurations and secure call handling. We'll walk your office through consent, recording, and data-retention settings during onboarding." }
+    ]
+  },
+  "socialPosts": [
+    { "platform": "X", "day": 1, "text": "A missed call is a missed customer. The average local business misses 30% of inbound calls. Your AI receptionist answers every single one — 24/7, in under 2 rings. 👇", "hashtags": ["#smallbusiness", "#AI"] },
+    { "platform": "LinkedIn", "day": 1, "text": "Dental offices lose $$$ every month to calls that ring out during lunch and after hours. We built an AI receptionist that answers, books, and confirms appointments around the clock — so the chair stays full.", "hashtags": ["#dentistry", "#smallbusiness"] },
+    { "platform": "X", "day": 2, "text": "Your front desk is busy with the patient in front of them. Meanwhile the phone rings… and the next patient goes to a competitor. AI receptionist = no more missed bookings.", "hashtags": ["#dentists", "#localbusiness"] },
+    { "platform": "X", "day": 3, "text": "It books the appointment, texts you the summary, and emails the recording. You wake up to a fuller calendar, not a voicemail backlog.", "hashtags": ["#AI", "#automation"] },
+    { "platform": "LinkedIn", "day": 4, "text": "Build update: a 3-location home-services company just routed all overflow calls to our AI. Result: 41 after-hours bookings in week one that would have gone to voicemail. Phones don't sleep — neither should your booking.", "hashtags": ["#buildinpublic", "#homeservices"] },
+    { "platform": "X", "day": 5, "text": "Restaurant owners: stop choosing between the phone and the dining room. AI answers reservations and takeout calls while you run the floor. (demo clip)", "hashtags": ["#restaurants", "#hospitality"] },
+    { "platform": "X", "day": 6, "text": "We don't sell 'AI'. We sell the appointments you're losing every time a call goes unanswered.", "hashtags": ["#smallbusiness"] },
+    { "platform": "LinkedIn", "day": 7, "text": "Case study: a single-dentist practice in Phoenix cut front-desk phone time by 60% and recovered 22 booked visits in a month — all from calls that used to ring out. Here's the setup.", "hashtags": ["#dentistry", "#casestudy"] },
+    { "platform": "X", "day": 7, "text": "Free 7-day trial, no new hardware. Forward your number, watch it answer. If it doesn't book real appointments, don't pay us.", "hashtags": ["#localbusiness", "#AI"] },
+    { "platform": "X", "day": 7, "text": "Drop your business type below and I'll show you exactly what your AI receptionist would say when a customer calls 🧵", "hashtags": ["#smallbusiness", "#AI"] }
+  ],
+  "emailSequence": [
+    { "step": 1, "subject": "Your AI receptionist is ready to answer 👇", "body": "Welcome! You're minutes from never missing a call again. Forward your business line to your new AI receptionist and place a test call to hear it in action. Reply here if anything's unclear — a real human reads these." },
+    { "step": 2, "subject": "How it books appointments (without double-entry)", "body": "Connect your Google Calendar, Calendly, or scheduling system and your AI receptionist will book, reschedule, and confirm appointments directly onto your calendar. Here's the 5-minute setup so every call turns into a booking." },
+    { "step": 3, "subject": "The calls you're losing after 5pm", "body": "Most local businesses miss a third of their calls — and after-hours is the worst. Turn on 24/7 answering and capture the bookings that used to hit voicemail. Here's how one clinic recovered 22 visits in a month." },
+    { "step": 4, "subject": "Make it sound exactly like your front desk", "body": "Customize the greeting, tone, and FAQs so callers get on-brand answers about hours, pricing, and services. Most offices set this up in under 10 minutes. Here's the customization checklist." },
+    { "step": 5, "subject": "Your trial ends soon — keep your calendar full", "body": "Your free trial is almost up. Upgrade to keep 24/7 answering, calendar booking, and call summaries running. Plans start at $199/month — far less than one missed patient. Choose your plan here." }
+  ],
+  "seoKeywords": [
+    { "keyword": "ai phone answering service for small business", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "virtual receptionist for dental office", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "24/7 answering service for clinics", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "ai appointment booking phone agent", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "automated phone receptionist software", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "how to stop missing customer calls", "intent": "informational", "difficulty": "low" },
+    { "keyword": "best virtual receptionist service 2026", "intent": "commercial", "difficulty": "high" },
+    { "keyword": "ai call answering for restaurants", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "after hours answering service cost", "intent": "informational", "difficulty": "low" },
+    { "keyword": "dental front desk phone overload", "intent": "informational", "difficulty": "low" },
+    { "keyword": "appointment scheduling phone automation", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "home services answering service", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "ai receptionist vs human receptionist", "intent": "informational", "difficulty": "low" },
+    { "keyword": "how much does a receptionist cost per month", "intent": "informational", "difficulty": "low" },
+    { "keyword": "missed call cost small business", "intent": "informational", "difficulty": "low" },
+    { "keyword": "voice ai for appointment booking", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "answering service for medical practice", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "automated reservation phone system restaurant", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "ai receptionist free trial", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "best ai answering service for clinics", "intent": "commercial", "difficulty": "high" }
+  ],
+  "adVariations": [
+    { "headline": "Never miss a call again", "body": "An AI receptionist that answers 24/7 and books appointments for you. Free 7-day trial.", "angle": "fear-of-loss" },
+    { "headline": "Your front desk, around the clock", "body": "Nights, weekends, lunch rushes — every call answered and booked. From $199/mo.", "angle": "always-on" },
+    { "headline": "Live in 48 hours, no new hardware", "body": "Forward your number and your AI receptionist starts answering. Cancel anytime.", "angle": "ease-of-use" },
+    { "headline": "22 visits recovered in one month", "body": "A solo dental practice turned missed calls into booked patients. See how.", "angle": "social-proof" },
+    { "headline": "Cheaper than one missed patient", "body": "Capture the after-hours calls you're losing for less than $7/day. Try it free.", "angle": "roi" }
+  ]
+}

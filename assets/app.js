@@ -50,6 +50,10 @@ function card(p) {
       <div class="bg-slate-50 rounded-lg py-2"><div class="text-sm font-bold">${m.paybackPeriodMonths ?? '—'}个月</div><div class="text-[11px] text-slate-400">回本</div></div>
       <div class="bg-slate-50 rounded-lg py-2"><div class="text-sm font-bold">$${(m.startupCostUsd ?? 0).toLocaleString()}</div><div class="text-[11px] text-slate-400">启动成本</div></div>
     </div>
+    <div class="mt-3 flex flex-wrap gap-1">
+      <span class="text-[11px] bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full px-2 py-0.5">🎁 营销物料就绪</span>
+      <span class="text-[11px] bg-slate-50 text-slate-500 border border-slate-200 rounded-full px-2 py-0.5">📈 营销分析</span>
+    </div>
     <div class="mt-4 flex items-center justify-between">
       <div class="text-xs text-slate-400">综合评分</div>
       <div class="flex items-center gap-2 w-2/3">

@@ -1,0 +1,174 @@
+{
+  "projectId": "faceless-youtube-automation",
+  "projectName": "无人出镜 YouTube 自动化频道",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。本频道为 AI 脚本+配音+剪辑的无人出镜知识频道，营销物料围绕吸引订阅与观看，需遵守 YouTube 关于 AI 生成内容披露、联盟链接披露(FTC)及货币化政策；事实类脚本须人工事实核查后再发布。",
+  "landingCopy": {
+    "hero": "The 5-Minute Knowledge Hit That Actually Makes You Smarter",
+    "subhead": "No talking heads. No fluff. Just sharp, visual breakdowns of the ideas, money moves, and mind-bending facts most channels are too slow to explain. New videos every week — subscribe and never run out of things worth knowing.",
+    "bullets": [
+      "Dense, no-filler scripts: every video is engineered so you learn something you can actually use or repeat by the end.",
+      "Crisp visuals and clean narration that make complex topics click in minutes, not hours.",
+      "A consistent upload schedule so your feed always has something smart to watch.",
+      "Curated, source-checked topics — we do the deep digging so you just get the payoff.",
+      "Watch on your commute, your lunch break, or before bed — bite-sized, but never dumbed down."
+    ],
+    "cta": "Subscribe & Hit the Bell",
+    "faq": [
+      {
+        "q": "How often do you upload?",
+        "a": "Consistently every week. Hit the bell and you'll never miss a drop — turn on notifications so the newest breakdown lands at the top of your feed."
+      },
+      {
+        "q": "Why don't you show your face?",
+        "a": "Because the ideas are the star, not us. Removing the talking head means more screen time for the visuals, data, and stories that make each topic stick."
+      },
+      {
+        "q": "Where do you get your information?",
+        "a": "Every script is researched from credible, cross-checked sources before we publish. We aim to inform, not to chase clickbait — accuracy keeps you coming back."
+      },
+      {
+        "q": "Can I suggest a topic?",
+        "a": "Absolutely. Drop your idea in the comments of any video. Some of our most-watched episodes started as a single viewer request."
+      }
+    ]
+  },
+  "socialPosts": [
+    {
+      "platform": "YouTube",
+      "day": 1,
+      "text": "New episode is live: the one idea that changes how you see this entire topic. 5 minutes, zero fluff, all payoff. Watch it, then tell us in the comments what surprised you most. Subscribe so the next one finds you.",
+      "hashtags": ["#LearnSomethingNew", "#Explained", "#Shorts"]
+    },
+    {
+      "platform": "X",
+      "day": 1,
+      "text": "Most people will never understand this — because nobody explained it in plain English. We just did, in 5 minutes. No talking head, all signal. Full breakdown on the channel.",
+      "hashtags": ["#Explained", "#YouTube"]
+    },
+    {
+      "platform": "YouTube",
+      "day": 2,
+      "text": "Community post: which would you rather we break down next? Drop a 1 or a 2 in the comments. The winner goes live this week. (This is exactly how our last viral episode started.)",
+      "hashtags": ["#Community", "#YouTube", "#LearnOnYouTube"]
+    },
+    {
+      "platform": "X",
+      "day": 3,
+      "text": "We spent 12 hours researching so you could understand it in 5 minutes. That's the whole deal. New video up — link below. Subscribe if 'smarter in 5' is your kind of thing.",
+      "hashtags": ["#Explainer", "#YouTube"]
+    },
+    {
+      "platform": "YouTube",
+      "day": 4,
+      "text": "Shorts drop: the single fact from this week's episode that made everyone in the comments go 'wait, WHAT?'. Watch the 60-second version here, then get the full story on the channel.",
+      "hashtags": ["#Shorts", "#DidYouKnow", "#Explained"]
+    },
+    {
+      "platform": "X",
+      "day": 4,
+      "text": "If you like knowing things before everyone else does, this channel is for you. Tight scripts, clean visuals, new drop every week. No face, no fluff, no wasted minutes.",
+      "hashtags": ["#LearnSomethingNew", "#YouTube"]
+    },
+    {
+      "platform": "YouTube",
+      "day": 5,
+      "text": "We read every comment. This week's episode answers the #1 question you all kept asking under the last video. That's the loop here: you ask, we research, you learn. Subscribe and keep the questions coming.",
+      "hashtags": ["#Community", "#LearnOnYouTube"]
+    },
+    {
+      "platform": "X",
+      "day": 6,
+      "text": "Save this thread for your next 'I'm bored' moment: a 5-minute video that leaves you smarter than 99% of the room. New one is live. You'll want the bell on for the next.",
+      "hashtags": ["#Explained", "#YouTube"]
+    },
+    {
+      "platform": "YouTube",
+      "day": 7,
+      "text": "Weekly recap: if you're new here, start with this episode — it's the one that hooks everyone. Then hit subscribe and the bell, because next week's topic might be the best one yet.",
+      "hashtags": ["#Subscribe", "#LearnSomethingNew", "#YouTube"]
+    },
+    {
+      "platform": "X",
+      "day": 7,
+      "text": "One week. One sharp idea every few days. Zero face, zero filler. If your feed is full of noise, this is the quiet channel that actually teaches you something. Come subscribe.",
+      "hashtags": ["#YouTube", "#Explainer"]
+    }
+  ],
+  "emailSequence": [
+    {
+      "step": 1,
+      "subject": "Welcome — here's where to start",
+      "body": "Hey,\n\nThanks for joining. Quick promise: every video on this channel is built to make you a little smarter in about 5 minutes — no talking heads, no filler, just the good part.\n\nStart with this episode (it's the one most new subscribers say hooked them): {{StarterVideoLink}}\n\nThen hit subscribe and turn on the bell so the next drop finds you automatically.\n\nTalk soon,\nThe {{ChannelName}} team"
+    },
+    {
+      "step": 2,
+      "subject": "Why we never show our faces",
+      "body": "Hey,\n\nPeople ask why this is a 'faceless' channel. Simple: the idea is the star, not us.\n\nNo talking head means more screen time for the visuals, the data, and the story — the stuff that actually makes a topic stick in your head.\n\nWe research each script from credible, cross-checked sources, then strip out everything that isn't worth your time.\n\nHere's a great example of that done right: {{ExampleVideoLink}}\n\nEnjoy,\nThe {{ChannelName}} team"
+    },
+    {
+      "step": 3,
+      "subject": "This week's drop is live",
+      "body": "Hey,\n\nNew episode just went up: {{LatestVideoLink}}\n\nIt answers a question a lot of you have been asking — and there's one fact in there that genuinely surprised our whole team while researching it.\n\nWatch it on your next break, then tell us in the comments what caught you off guard. We read every single one.\n\nSee you in the comments,\nThe {{ChannelName}} team"
+    },
+    {
+      "step": 4,
+      "subject": "Your topic could be next",
+      "body": "Hey,\n\nSome of our most-watched episodes started as one viewer's comment.\n\nSo here's the open invite: what do you wish someone would finally explain clearly? Reply to this email or drop it in the comments of any video.\n\nWe'll take the best ideas, do the deep research, and turn them into a 5-minute breakdown — with a shout-out to whoever suggested it.\n\nHit reply. We're listening.\nThe {{ChannelName}} team"
+    },
+    {
+      "step": 5,
+      "subject": "Don't miss what's coming",
+      "body": "Hey,\n\nQuick one. We've got a run of episodes lined up that we're genuinely excited about — including a topic we think might be our best yet.\n\nTwo things so you don't miss them:\n1) Make sure you're subscribed: {{ChannelLink}}\n2) Turn on the bell so notifications actually reach you (YouTube hides new videos from people who don't).\n\nThat's it. New knowledge, every week, straight to your feed.\n\nUntil next drop,\nThe {{ChannelName}} team"
+    }
+  ],
+  "seoKeywords": [
+    {"keyword": "best educational youtube channels", "intent": "informational", "difficulty": "high"},
+    {"keyword": "learn something new in 5 minutes", "intent": "informational", "difficulty": "low"},
+    {"keyword": "faceless youtube channel ideas", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "explained simply", "intent": "informational", "difficulty": "low"},
+    {"keyword": "interesting facts youtube", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "how does it work explained", "intent": "informational", "difficulty": "low"},
+    {"keyword": "short educational videos", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best channels to learn from", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "mind blowing facts", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "things you didn't know", "intent": "informational", "difficulty": "low"},
+    {"keyword": "knowledge youtube channel", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "smart videos to watch", "intent": "informational", "difficulty": "low"},
+    {"keyword": "youtube channels that make you smarter", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "explainer videos", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "what is explained for beginners", "intent": "informational", "difficulty": "low"},
+    {"keyword": "documentary style youtube channel", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "5 minute explainers", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best youtube channels to learn daily", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "fun facts to know", "intent": "informational", "difficulty": "low"},
+    {"keyword": "binge worthy educational videos", "intent": "informational", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {
+      "headline": "Get Smarter in 5 Minutes a Day",
+      "body": "Sharp, visual breakdowns of ideas worth knowing — no talking heads, no filler. New episode every week. Subscribe and never run out of smart things to watch.",
+      "angle": "time-efficient learning / value prop"
+    },
+    {
+      "headline": "The Fact That Stops You Mid-Scroll",
+      "body": "We research for hours so you understand it in minutes. One idea, one episode, one 'wait, WHAT?' moment. Watch the latest breakdown now.",
+      "angle": "curiosity hook / single big idea"
+    },
+    {
+      "headline": "No Face. No Fluff. All Signal.",
+      "body": "Because the idea is the star — not a talking head. Clean visuals, tight scripts, source-checked topics. If your feed is noise, this is the quiet channel that teaches.",
+      "angle": "anti-fluff / faceless differentiator"
+    },
+    {
+      "headline": "You Ask. We Research. You Learn.",
+      "body": "Some of our most-watched episodes started as a viewer comment. Suggest a topic, we'll break it down in 5 minutes. Subscribe and join the loop.",
+      "angle": "community / two-way engagement"
+    },
+    {
+      "headline": "Turn On the Bell. Thank Us Later.",
+      "body": "New knowledge every week, straight to your feed. Crisp narration, clean visuals, zero wasted minutes. Subscribe and hit the bell so you never miss a drop.",
+      "angle": "subscribe + notification CTA"
+    }
+  ]
+}

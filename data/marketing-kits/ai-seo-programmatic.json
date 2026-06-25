@@ -1,0 +1,70 @@
+{
+  "projectId": "ai-seo-programmatic",
+  "projectName": "Programmatic SEO 内容站",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "Real answers to the exact question you just searched — no fluff, no 2,000-word intros.",
+    "subhead": "We build a fast, no-nonsense answer library for the long-tail how-to and comparison questions Google barely answers well. Find your fix, then get one short email a week with the best of what's new.",
+    "bullets": [
+      "Straight-to-the-answer pages — the takeaway is at the top, sources at the bottom",
+      "Side-by-side comparisons so you can decide in 60 seconds, not 60 minutes",
+      "Free weekly digest of the most-searched fixes and product face-offs",
+      "No paywalls, no login walls — bookmark and go"
+    ],
+    "cta": "Get the free weekly digest",
+    "faq": [
+      {"q": "Is this free?", "a": "Yes. Every answer page is free to read, and the email digest is free to join. We keep the lights on with relevant ads and affiliate links, clearly marked."},
+      {"q": "How are the answers created?", "a": "We use AI to draft and structure pages at scale, then prioritize the questions real people search for. Each topic is reviewed for accuracy before it ships."},
+      {"q": "Why should I subscribe instead of just searching again?", "a": "Search gives you ten blue links; we send you one curated email with the answers and comparisons people actually clicked this week — so you stop re-searching the same things."}
+    ]
+  },
+  "socialPosts": [
+    {"platform": "X", "day": 1, "text": "Searched a 'how do I…' question and got ten 2,000-word essays with the answer buried in paragraph 14? Same. So we built an answer library that puts the takeaway first. Free, no login.", "hashtags": ["#SEO", "#howto"]},
+    {"platform": "LinkedIn", "day": 1, "text": "Most content marketing buries the answer to make you scroll past ads. We flipped it: answer at the top, sources at the bottom, comparison tables in between. The result is a library people actually bookmark — and a free weekly digest they actually open.", "hashtags": ["#ContentMarketing", "#SEO"]},
+    {"platform": "X", "day": 2, "text": "New this week: 40 fresh 'X vs Y' comparison pages, each readable in under a minute. Pick a winner, move on with your day. Link in bio.", "hashtags": ["#comparison", "#tools"]},
+    {"platform": "X", "day": 3, "text": "We don't write intros. We don't pad word counts for the algorithm. We just answer the question you searched. Try it once and you'll see the difference.", "hashtags": ["#howto", "#nofluff"]},
+    {"platform": "LinkedIn", "day": 3, "text": "Long-tail questions get the worst search results on the internet — too niche for big publishers, too specific for forums. That gap is exactly what we fill: clear, sourced answers to the questions nobody else bothers to do well.", "hashtags": ["#SEO", "#research"]},
+    {"platform": "X", "day": 4, "text": "Our most-clicked answer this week settled a debate that wastes hours every day. Want the best of what people searched? One short email a week, free. Subscribe in bio.", "hashtags": ["#newsletter", "#howto"]},
+    {"platform": "X", "day": 5, "text": "Comparison fatigue is real. That's why every face-off page ends with a one-line verdict: who should pick what, and why. No more tab-juggling.", "hashtags": ["#comparison", "#productivity"]},
+    {"platform": "LinkedIn", "day": 5, "text": "We treat readers like adults: clearly labeled ads, honest affiliate disclosures, and answers we'd want for ourselves. Trust is the only moat a content site has — so we protect it on purpose.", "hashtags": ["#trust", "#ContentMarketing"]},
+    {"platform": "X", "day": 6, "text": "Bookmark one answer page and you'll come back. Subscribe and you'll never have to re-find it. Free weekly digest of the best how-tos and comparisons → link in bio.", "hashtags": ["#newsletter", "#howto"]},
+    {"platform": "LinkedIn", "day": 7, "text": "A week's worth of the internet's most-searched practical questions, answered and ranked, delivered in one five-minute email. If you research for a living, this is the shortcut. Subscribe free.", "hashtags": ["#newsletter", "#SEO"]}
+  ],
+  "emailSequence": [
+    {"step": 1, "subject": "You're in — here's how to get the most out of this", "body": "Thanks for subscribing. Here's the deal: once a week you'll get the most-searched how-to and comparison answers, ranked by what people actually clicked. No fluff, no daily spam. To start, here are our three most-read answer pages this month — bookmark the ones you'll need again."},
+    {"step": 2, "subject": "The comparison most people get wrong", "body": "Every week thousands of people search the same 'X vs Y' question and walk away more confused. This week we broke down the one that trips everyone up, with a one-line verdict at the end. Read it in under a minute, then tell us which comparison you want us to settle next."},
+    {"step": 3, "subject": "Stop re-searching the same things", "body": "Here's a small habit that saves real time: when you find an answer page that helps, bookmark it instead of re-searching later. Better yet, this digest does the remembering for you — we resurface the answers people keep coming back to. This issue: five fixes worth keeping."},
+    {"step": 4, "subject": "How we decide what to answer (and how we keep it honest)", "body": "Quick peek behind the curtain. We use AI to draft pages at scale, then prioritize the questions with real search demand and review each topic for accuracy before it ships. Ads and affiliate links are always labeled. That's how we stay free without becoming the cluttered mess you came here to escape."},
+    {"step": 5, "subject": "Your turn: what should we answer next?", "body": "You've seen what we do — clear answers, fast comparisons, zero padding. Now help us point the firehose: reply with the one practical question you wish had a better answer online, and we'll add the best reader suggestions to next week's queue. Thanks for reading."}
+  ],
+  "seoKeywords": [
+    {"keyword": "how to fix slow wifi on laptop", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "best free alternative to photoshop", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "notion vs obsidian for note taking", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to remove background from image free", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "stripe vs paypal fees comparison", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to convert pdf to word without software", "intent": "informational", "difficulty": "low"},
+    {"keyword": "cheapest way to send money internationally", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to speed up an old android phone", "intent": "informational", "difficulty": "low"},
+    {"keyword": "mailchimp vs convertkit for beginners", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to write a follow up email after no response", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best budgeting app for couples", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to delete cache on chrome mobile", "intent": "informational", "difficulty": "low"},
+    {"keyword": "squarespace vs wordpress for small business", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to unshrink a wool sweater", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best noise cancelling headphones under 100", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to recover an unsaved word document", "intent": "informational", "difficulty": "low"},
+    {"keyword": "zoom vs google meet for small teams", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to get rid of fruit flies fast", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best free password manager 2026", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to fix a leaky faucet without a plumber", "intent": "informational", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {"headline": "The answer, not the essay", "body": "Searched a how-to and got buried in fluff? Our answer library puts the takeaway first. Free, no login.", "angle": "anti-fluff / fast value"},
+    {"headline": "Settle the X vs Y debate in 60 seconds", "body": "Clear side-by-side comparisons with a one-line verdict at the end. Decide and move on.", "angle": "comparison / decision speed"},
+    {"headline": "One email. The week's best answers.", "body": "Skip the re-searching. Get the most-clicked how-tos and comparisons in a free weekly digest.", "angle": "subscription / convenience"},
+    {"headline": "Long-tail questions, finally answered well", "body": "Too niche for big publishers, too specific for forums — that's exactly what we do best. Free to read.", "angle": "gap / underserved demand"},
+    {"headline": "Bookmark it once, never search it again", "body": "Practical answers you'll actually come back to, plus a free weekly digest so you never lose them.", "angle": "retention / habit"}
+  ]
+}

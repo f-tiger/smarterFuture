@@ -1,0 +1,71 @@
+{
+  "projectId": "chrome-extension-microsaas",
+  "projectName": "Chrome 扩展微型 SaaS",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "Fix Your Most Annoying Browser Habit in One Click",
+    "subhead": "A lightweight Chrome extension that kills the tiny daily friction power users hate on LinkedIn, Gmail, and YouTube. Free to start, $7/mo to go Pro.",
+    "bullets": [
+      "Installs in 10 seconds, works the moment you open your favorite tab",
+      "Zero data leaves your browser, your accounts stay private",
+      "Free forever for core features, unlock power tools with Pro for $7/mo",
+      "Built for people who live in one website all day"
+    ],
+    "cta": "Add to Chrome, Free",
+    "faq": [
+      {"q": "Is my data safe?", "a": "Yes. The extension runs locally in your browser and never sends your account data to our servers."},
+      {"q": "What do I get with Pro?", "a": "Pro unlocks bulk actions, advanced filters, and saved presets that save power users hours every week, for $7/mo."},
+      {"q": "Can I cancel anytime?", "a": "Absolutely. Cancel in one click and you keep all free features forever, no questions asked."},
+      {"q": "Which sites does it support?", "a": "Today we focus on LinkedIn, Gmail, and YouTube, with more high-traffic sites on the roadmap."}
+    ]
+  },
+  "socialPosts": [
+    {"platform": "X", "day": 1, "text": "You open the same tab 50 times a day. That tiny friction you keep ignoring? We built a Chrome extension that removes it in one click. Free to start.", "hashtags": ["#chromeextension", "#productivity"]},
+    {"platform": "LinkedIn", "day": 1, "text": "Power users don't switch tools, they sharpen the one they live in. Our new Chrome extension shaves minutes off the repetitive actions you do every day inside LinkedIn, Gmail, and YouTube. Free tier available now.", "hashtags": ["#productivity", "#saas"]},
+    {"platform": "X", "day": 2, "text": "Spending all day in Gmail? Stop doing the same 4 clicks over and over. One install, instant relief. Free.", "hashtags": ["#gmail", "#chromeextension"]},
+    {"platform": "X", "day": 3, "text": "We obsessed over a problem most people just accept: the micro-annoyance you hit 30 times a day. Solved it. Try it free.", "hashtags": ["#microsaas", "#buildinpublic"]},
+    {"platform": "LinkedIn", "day": 3, "text": "Most SaaS tries to do everything. We do one thing inside the website you already love, and we do it better than anyone. Lightweight, private, freemium. Pro is just $7/mo.", "hashtags": ["#microsaas", "#productivity"]},
+    {"platform": "X", "day": 4, "text": "Runs 100% in your browser. No accounts synced to a server. Your data stays yours. That's how a Chrome extension should work.", "hashtags": ["#privacy", "#chromeextension"]},
+    {"platform": "X", "day": 5, "text": "Pro users save ~2 hours a week with bulk actions and saved presets. For $7/mo, that math is not close.", "hashtags": ["#productivity", "#saas"]},
+    {"platform": "LinkedIn", "day": 5, "text": "We asked 200 heavy LinkedIn users what slows them down. The answer wasn't features, it was friction. So we built an extension that removes it. Free to try, Pro at $7/mo.", "hashtags": ["#linkedin", "#productivity"]},
+    {"platform": "X", "day": 6, "text": "10 second install. Zero learning curve. Works the second you open your favorite tab. Add it free.", "hashtags": ["#chromeextension", "#tools"]},
+    {"platform": "X", "day": 7, "text": "If you live inside one website all day, this extension was built for you. Free forever for the core, $7/mo to go Pro. Try it.", "hashtags": ["#microsaas", "#productivity"]}
+  ],
+  "emailSequence": [
+    {"step": 1, "subject": "Your browser just got faster", "body": "Thanks for installing. You're 10 seconds away from killing the daily friction you've been ignoring. Open LinkedIn, Gmail, or YouTube and you'll see it working immediately. Reply if anything feels off, a real human reads these."},
+    {"step": 2, "subject": "The one feature most people miss", "body": "Quick tip: the saved presets feature lets you repeat your most common action with a single keystroke. Free users get one preset, Pro users get unlimited. Here's a 20-second demo to try it today."},
+    {"step": 3, "subject": "How much time are you actually saving?", "body": "We crunched the numbers. Pro users on average save about 2 hours per week through bulk actions and filters. That's roughly 100 hours a year reclaimed from repetitive clicking. Want to see your potential savings?"},
+    {"step": 4, "subject": "A quick question for you", "body": "You've been using the free version for a few days now. What's the single most annoying thing left in your workflow? Hit reply and tell us, we ship updates based directly on these answers."},
+    {"step": 5, "subject": "Unlock Pro for the price of a coffee", "body": "For $7/mo you get bulk actions, advanced filters, and unlimited presets, no commitment, cancel anytime. If it doesn't save you more than it costs in the first week, just cancel. Upgrade here."}
+  ],
+  "seoKeywords": [
+    {"keyword": "best chrome extension for linkedin", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "gmail productivity extension", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "youtube chrome extension tools", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to speed up linkedin workflow", "intent": "informational", "difficulty": "low"},
+    {"keyword": "lightweight chrome extension productivity", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "free gmail chrome extension", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "what is a micro saas", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best browser extensions 2026", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "linkedin automation chrome extension", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to save time on gmail", "intent": "informational", "difficulty": "low"},
+    {"keyword": "private chrome extension no data tracking", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "youtube power user tools", "intent": "informational", "difficulty": "low"},
+    {"keyword": "chrome extension freemium pricing", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best productivity extensions for power users", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "bulk actions linkedin extension", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to reduce repetitive browser tasks", "intent": "informational", "difficulty": "low"},
+    {"keyword": "cheap chrome extension subscription", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "gmail inbox shortcuts extension", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "best chrome tools for remote workers", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "chrome extension for daily workflow", "intent": "informational", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {"headline": "One Click. Less Friction.", "body": "The lightweight Chrome extension power users love. Free to start, $7/mo Pro. Add it now.", "angle": "simplicity"},
+    {"headline": "Stop Repeating The Same Clicks", "body": "Bulk actions and saved presets that save you 2 hours a week inside Gmail and LinkedIn.", "angle": "time-savings"},
+    {"headline": "Your Data Never Leaves Your Browser", "body": "100% local, zero tracking. The private way to supercharge LinkedIn, Gmail, and YouTube.", "angle": "privacy"},
+    {"headline": "Built For People Who Live In One Tab", "body": "If you spend all day on one site, this extension was made for you. Try it free.", "angle": "niche-targeting"},
+    {"headline": "Cheaper Than A Coffee, Saves Hours", "body": "Pro is just $7/mo and pays for itself in the first week. Cancel anytime.", "angle": "price-value"}
+  ]
+}

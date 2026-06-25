@@ -1,0 +1,71 @@
+{
+  "projectId": "developer-api-microsaas",
+  "projectName": "开发者小众 API",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。本项目按用量计费，文案中的延迟/正常运行时间等指标为占位示例，正式发布前请替换为真实SLA与基准数据。",
+  "landingCopy": {
+    "hero": "One API call. Done. Stop building the boring part yourself.",
+    "subhead": "Plug-and-play APIs for the things you don't want to build — screenshots, data extraction, and format conversion — with clean docs, predictable latency, and usage-based pricing. Ship in an afternoon, not a sprint.",
+    "bullets": [
+      "Single, well-documented endpoints — copy the curl, paste your key, you're live",
+      "Pay only for what you use — no minimums, no seat licenses, no surprise tiers",
+      "Fast, reliable, and built to scale from your weekend project to production traffic",
+      "SDK snippets and a generous free tier so you can prototype before you commit"
+    ],
+    "cta": "Get your API key (free tier, no card)",
+    "faq": [
+      { "q": "How fast can I integrate?", "a": "Most developers are making live calls within 5 minutes. Grab a key, copy a curl example from the docs, and you're returning real results — no SDK install required to start." },
+      { "q": "How does pricing work?", "a": "Pure usage-based pricing. You pay per request with a free tier to start, so a hobby project costs cents and a production app scales predictably. No seats, no minimums." },
+      { "q": "Is it reliable enough for production?", "a": "Yes. The API is built for production traffic with monitored uptime, sensible rate limits, and clear error responses. Start on the free tier and scale up when you're ready." },
+      { "q": "Which endpoints are available?", "a": "Core endpoints cover website screenshots, structured data extraction, and file/format conversion, with more added based on developer requests. Full reference and examples are in the docs." }
+    ]
+  },
+  "socialPosts": [
+    { "platform": "X", "day": 1, "text": "You don't need a Chrome headless cluster to take a screenshot. You need one API call. We built the boring infra so you can ship the actual feature. 👇", "hashtags": ["#dev", "#API"] },
+    { "platform": "LinkedIn", "day": 1, "text": "Every SaaS team eventually hits the same yak-shave: screenshots, data extraction, format conversion. Building and maintaining that in-house burns weeks. A plug-and-play API turns it into one line — usage-based, no minimums.", "hashtags": ["#SaaS", "#developers"] },
+    { "platform": "X", "day": 2, "text": "Before: 2 days wiring up a headless browser, queue, and storage. After: `curl` one endpoint, get a PNG back. Ship the feature, not the plumbing.", "hashtags": ["#buildinpublic", "#API"] },
+    { "platform": "X", "day": 3, "text": "Pricing that respects indie devs: pay per request, free tier to start, no seats and no 'contact sales'. Your hobby project costs cents.", "hashtags": ["#indiedev", "#API"] },
+    { "platform": "LinkedIn", "day": 4, "text": "Build update: developers are using the data-extraction endpoint to turn messy HTML into clean JSON in production. One team ripped out 400 lines of brittle scraping code and replaced it with a single call.", "hashtags": ["#buildinpublic", "#developers"] },
+    { "platform": "X", "day": 5, "text": "Screenshot, extract, convert — three endpoints that delete the tickets nobody wants to pick up. Copy the curl, paste your key, done. (docs link)", "hashtags": ["#dev", "#API"] },
+    { "platform": "X", "day": 6, "text": "We don't sell an 'API platform'. We sell the afternoon you get back by not building headless infra yourself.", "hashtags": ["#indiehackers"] },
+    { "platform": "LinkedIn", "day": 7, "text": "Case study: a 2-person SaaS team added PDF and screenshot exports to their app in a single afternoon using our API — a feature they'd punted on for 6 months. Here's the integration.", "hashtags": ["#SaaS", "#casestudy"] },
+    { "platform": "X", "day": 7, "text": "Free tier, no card. Grab a key and make your first call in under 5 minutes. If it doesn't save you a day of work, you've lost nothing.", "hashtags": ["#dev", "#API"] },
+    { "platform": "X", "day": 7, "text": "What boring infra are you tired of maintaining? Reply and I'll tell you if there's a one-call endpoint for it 🧵", "hashtags": ["#indiedev", "#API"] }
+  ],
+  "emailSequence": [
+    { "step": 1, "subject": "Your API key is ready — first call in 5 min 👇", "body": "Welcome! Your free-tier key is active. Copy the curl example from the docs, paste your key, and you'll get a real result back in minutes — no SDK install required. Reply here if you get stuck; a real developer reads these." },
+    { "step": 2, "subject": "The 3 endpoints that delete your backlog", "body": "Screenshots, data extraction, and format conversion — the tickets nobody wants to build. Each is a single call. Here are copy-paste examples for all three so you can ship the feature you've been putting off." },
+    { "step": 3, "subject": "Pricing that won't surprise you", "body": "Pure usage-based: pay per request, free tier to start, no seats and no minimums. That means a prototype costs cents and production scales predictably. Here's how to estimate your monthly usage in 2 minutes." },
+    { "step": 4, "subject": "They shipped a 6-month feature in an afternoon", "body": "A 2-person SaaS team added PDF and screenshot exports in a single afternoon — a feature they'd punted on for half a year. Here's the exact integration so you can copy it." },
+    { "step": 5, "subject": "Moving to production? Here's what changes", "body": "Ready to go live? Add a payment method to lift free-tier limits and unlock higher rate limits and monitored uptime for production traffic. You still only pay for what you use. Upgrade your key here." }
+  ],
+  "seoKeywords": [
+    { "keyword": "website screenshot api", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "data extraction api for developers", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "html to json api", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "file format conversion api", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "usage based pricing api", "intent": "informational", "difficulty": "low" },
+    { "keyword": "how to take a screenshot programmatically", "intent": "informational", "difficulty": "low" },
+    { "keyword": "headless browser screenshot alternative", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "best apis for indie developers 2026", "intent": "commercial", "difficulty": "high" },
+    { "keyword": "pdf generation api", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "scrape website to json api", "intent": "informational", "difficulty": "low" },
+    { "keyword": "url to image api", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "micro saas api ideas", "intent": "informational", "difficulty": "low" },
+    { "keyword": "convert html to pdf api", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "plug and play developer api", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "free tier api no credit card", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "simple rest api for screenshots", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "structured data extraction tool api", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "how to add export feature to saas", "intent": "informational", "difficulty": "low" },
+    { "keyword": "document conversion api pricing", "intent": "informational", "difficulty": "low" },
+    { "keyword": "pay per request api service", "intent": "commercial", "difficulty": "low" }
+  ],
+  "adVariations": [
+    { "headline": "One API call. Done.", "body": "Screenshots, data extraction, format conversion. Skip the infra, ship the feature. Free tier, no card.", "angle": "ease-of-use" },
+    { "headline": "Stop building the boring part", "body": "Delete the tickets nobody wants. Plug-and-play endpoints with clean docs.", "angle": "pain-point" },
+    { "headline": "Pay only for what you use", "body": "No seats, no minimums, no 'contact sales'. Hobby projects cost cents.", "angle": "pricing" },
+    { "headline": "A 6-month feature in an afternoon", "body": "A 2-person team shipped exports in hours, not sprints. See the integration.", "angle": "social-proof" },
+    { "headline": "Live in 5 minutes", "body": "Grab a key, copy the curl, get a real result. Free tier, no credit card.", "angle": "speed" }
+  ]
+}

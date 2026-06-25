@@ -1,0 +1,70 @@
+{
+  "projectId": "newsletter-curation",
+  "projectName": "垂直行业 AI 策展 Newsletter",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "Your industry, summed up in 5 minutes a day. Free.",
+    "subhead": "Every morning our AI reads everything happening in your field, then hands you the signal — what changed, why it matters, and what to do about it — in one short, scannable email.",
+    "bullets": [
+      "Five-minute read, every weekday — the essentials, never the noise",
+      "Summaries written for practitioners, not press releases",
+      "Curated from hundreds of sources so you don't have to follow any of them",
+      "Always free; sponsored slots are clearly labeled and never disguised"
+    ],
+    "cta": "Subscribe free — first issue tomorrow",
+    "faq": [
+      {"q": "Is it really free?", "a": "Yes, the daily edition is free forever. We're funded by clearly labeled sponsors and an optional membership tier with deeper analysis and the full archive."},
+      {"q": "How is it curated?", "a": "Our AI scans hundreds of industry sources overnight, ranks what matters, and drafts tight summaries. An editor reviews the lineup before it goes out so you only get what's worth your time."},
+      {"q": "Will I be buried in email?", "a": "Never. One email per weekday, designed to be read in five minutes. Unsubscribe in one click anytime — though we don't think you'll want to."}
+    ]
+  },
+  "socialPosts": [
+    {"platform": "X", "day": 1, "text": "You don't have time to follow 200 sources in your industry. We do it for you — and boil it down to a 5-minute email every morning. Free. First issue tomorrow.", "hashtags": ["#newsletter", "#industrynews"]},
+    {"platform": "LinkedIn", "day": 1, "text": "Staying current in our field used to mean drowning in feeds, newsletters, and Slack links. We built the opposite: one AI-curated email a day that tells you what actually changed and why it matters — in five minutes. Free to join.", "hashtags": ["#professionaldevelopment", "#newsletter"]},
+    {"platform": "X", "day": 2, "text": "While you slept, our AI read everything in your industry. This morning it handed you the three things you actually need to know. That's the whole product. Subscribe free.", "hashtags": ["#AI", "#newsletter"]},
+    {"platform": "X", "day": 3, "text": "FOMO is a tax on people without a good newsletter. Stop paying it. One email, every weekday, the essentials only. Link in bio.", "hashtags": ["#FOMO", "#industrynews"]},
+    {"platform": "LinkedIn", "day": 3, "text": "Press releases tell you what companies want you to hear. We write for practitioners: what changed, why it matters to your work, and what to do about it. No spin, no fluff, five minutes. Subscribe free.", "hashtags": ["#newsletter", "#career"]},
+    {"platform": "X", "day": 4, "text": "Our readers open this at coffee and close it before the cup is empty. Caught up on the whole industry, no tabs left open. Join free.", "hashtags": ["#newsletter", "#productivity"]},
+    {"platform": "X", "day": 5, "text": "We read the boring stuff so you get the important stuff. Hundreds of sources in, one tight email out. Every weekday, free.", "hashtags": ["#curation", "#newsletter"]},
+    {"platform": "LinkedIn", "day": 5, "text": "Sponsorship done right: every sponsored slot in our newsletter is clearly labeled and relevant to the field. We'd rather keep your trust than chase a cheap click. That's also why the daily edition stays free.", "hashtags": ["#trust", "#newsletter"]},
+    {"platform": "X", "day": 6, "text": "Thousands of practitioners start their day with our 5-minute brief. Want in? It's free and tomorrow's issue is already cooking. Link in bio.", "hashtags": ["#newsletter", "#community"]},
+    {"platform": "LinkedIn", "day": 7, "text": "If your job depends on knowing what's happening in your industry before everyone else, a daily AI-curated brief is the cheapest edge you can get. Five minutes a day, free. Subscribe and see for yourself.", "hashtags": ["#career", "#newsletter"]}
+  ],
+  "emailSequence": [
+    {"step": 1, "subject": "Welcome — your first 5-minute brief lands tomorrow", "body": "You're in. Starting tomorrow morning you'll get one short email with the day's most important developments in your field — what changed, why it matters, and what to do about it. To make sure it reaches your inbox, drag this email to your primary tab and add us to your contacts. See you at coffee."},
+    {"step": 2, "subject": "Why five minutes beats two hours of feeds", "body": "Most people 'stay informed' by scrolling endlessly and still feeling behind. Our approach is the opposite: our AI reads hundreds of sources overnight, ranks what matters, and an editor signs off before it goes out. You get the signal, skip the noise, and reclaim the rest of your morning. That's the whole promise."},
+    {"step": 3, "subject": "The story everyone in our field missed last week", "body": "Buried under the headlines last week was a development that quietly changes how a lot of us work. We flagged it; most outlets didn't. This is exactly what a good brief is for — catching the important thing before it becomes the obvious thing. Reply and tell us which topics you want us watching most closely."},
+    {"step": 4, "subject": "How we stay free (and keep your trust)", "body": "Quick transparency note. The daily edition is free because clearly labeled sponsors fund it — never disguised ads, never irrelevant junk. If you want more, our optional membership adds deeper analysis and the full searchable archive. Either way, the morning brief stays free for you, forever."},
+    {"step": 5, "subject": "Know one person who'd love this?", "body": "If the brief has earned a spot in your morning, the best compliment you can give is a forward. Pass it to one colleague who's always trying to keep up — they'll thank you, and you'll have a smarter person to talk shop with. Thanks for reading, and for spreading the word."}
+  ],
+  "seoKeywords": [
+    {"keyword": "best industry newsletter for professionals", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "daily news digest email free", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to stay up to date in my industry", "intent": "informational", "difficulty": "low"},
+    {"keyword": "ai curated news summary", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "5 minute news brief newsletter", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "best newsletters to subscribe to 2026", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to keep up with industry trends", "intent": "informational", "difficulty": "low"},
+    {"keyword": "morning brief email for professionals", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "free trade publication alternatives", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to filter industry news noise", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best way to read industry news fast", "intent": "informational", "difficulty": "low"},
+    {"keyword": "newsletter sponsorship opportunities niche", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "curated newsletter vs rss feed", "intent": "informational", "difficulty": "low"},
+    {"keyword": "what newsletters do professionals read", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "daily email summary of my field", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how to never miss industry news", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best paid newsletter membership worth it", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "ai news aggregator email", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "short daily newsletter for busy professionals", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how to get smarter about my industry", "intent": "informational", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {"headline": "Your whole industry, in 5 minutes a day", "body": "Our AI reads hundreds of sources overnight so you get only what matters each morning. Free.", "angle": "time-saving / convenience"},
+    {"headline": "Stop drowning in feeds", "body": "One curated email a day beats two hours of scrolling. The signal, never the noise. Subscribe free.", "angle": "noise reduction / pain"},
+    {"headline": "Be the first to know in your field", "body": "Catch the important development before it's obvious. A daily AI-curated brief, written for practitioners.", "angle": "competitive edge"},
+    {"headline": "The smartest 5 minutes of your morning", "body": "Read it at coffee, close it caught up. Thousands of practitioners already do. Join free.", "angle": "social proof / habit"},
+    {"headline": "Free, daily, and actually worth opening", "body": "Clearly labeled sponsors keep it free; an editor keeps it sharp. One click to subscribe.", "angle": "trust / value"}
+  ]
+}

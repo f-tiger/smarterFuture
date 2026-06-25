@@ -1,0 +1,72 @@
+{
+  "projectId": "ai-ugc-video-ads",
+  "projectName": "AI UGC 短视频广告工厂",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。本项目使用AI数字人，涉及肖像/声音授权与平台'AI生成内容'披露要求(TikTok/Meta)，正式交付前请核对授权链与平台政策。",
+  "landingCopy": {
+    "hero": "30 UGC video ads a month. No creators, no shoots, no chaos.",
+    "subhead": "An AI UGC factory for DTC brands and agencies — we use AI spokespeople to deliver a steady pipeline of scroll-stopping, UGC-style video ads every month, ready for TikTok, Reels, and Shorts. Plans from $499/month.",
+    "bullets": [
+      "A batch of fresh, on-brand UGC-style ads delivered every month — no casting, shipping, or reshoots",
+      "Hooks and scripts engineered for paid social, with multiple variations to test per concept",
+      "Built-in AI spokespeople across ages and styles, so every ad feels authentic to your audience",
+      "Turnaround in days, not weeks — feed your ad account a constant stream of new creative",
+      "Native-ready exports for TikTok, Instagram Reels, and YouTube Shorts"
+    ],
+    "cta": "Get my first 3 UGC ads free",
+    "faq": [
+      { "q": "Will these actually look like real UGC?", "a": "Yes — that's the whole point. We script and produce them to feel like genuine creator content, with natural delivery, hooks, and pacing that perform in the feed, not polished studio commercials." },
+      { "q": "How many videos do I get and how fast?", "a": "Plans deliver batches of UGC-style ads monthly, typically turned around in a few days per batch — enough to keep your ad account fed with fresh creative to test." },
+      { "q": "Do I own the videos and can I run them on ads?", "a": "Yes. You receive native-ready files cleared for use in your paid campaigns. We'll also guide you on platform AI-disclosure best practices during onboarding." },
+      { "q": "Can it match my brand and product?", "a": "We work from your product, offer, and brand voice to script and produce ads that sound like you — and we iterate on the winners so the creative keeps improving." }
+    ]
+  },
+  "socialPosts": [
+    { "platform": "X", "day": 1, "text": "Your winning ad fatigues in ~7 days. Sourcing creators, briefing, shipping product, waiting on edits = weeks. We deliver 30 UGC-style ads a month, on tap. 👇", "hashtags": ["#DTC", "#ecommerce"] },
+    { "platform": "LinkedIn", "day": 1, "text": "The bottleneck in paid social isn't budget — it's creative volume. Most DTC brands can't produce enough UGC to keep testing. We built an AI UGC factory that ships a fresh batch every month so your ad account never starves.", "hashtags": ["#DTC", "#paidsocial"] },
+    { "platform": "X", "day": 2, "text": "Old way: $200/video + 3 weeks + reshoots. New way: a batch of UGC-style ads delivered in days. Same hook-driven feel, a fraction of the cost.", "hashtags": ["#ecommerce", "#ads"] },
+    { "platform": "X", "day": 3, "text": "Creative volume is the unlock. The brands winning on TikTok aren't smarter — they just test 5x more variations. We make 5x cheap.", "hashtags": ["#TikTokAds", "#DTC"] },
+    { "platform": "LinkedIn", "day": 4, "text": "Build update: an agency partner ran 28 of our AI UGC ads across 4 client accounts this month. Two became top performers and cut CPA by 31%. Volume beats perfection in paid social.", "hashtags": ["#buildinpublic", "#agency"] },
+    { "platform": "X", "day": 5, "text": "One product, 6 hooks, 6 AI spokespeople. Which one wins? Stop guessing — test them all this week. (demo reel)", "hashtags": ["#DTC", "#UGC"] },
+    { "platform": "X", "day": 6, "text": "We don't sell 'AI videos'. We sell the testing velocity that finds your next winning ad.", "hashtags": ["#ecommerce"] },
+    { "platform": "LinkedIn", "day": 7, "text": "Case study: a skincare DTC brand replaced its $4k/month creator pipeline with our AI UGC factory, doubled creative output, and held CPA flat. Here's the workflow.", "hashtags": ["#DTC", "#casestudy"] },
+    { "platform": "X", "day": 7, "text": "First 3 UGC ads free, no card. Send us your product page, get scroll-stopping creative back. If they don't beat your current ads, don't pay us.", "hashtags": ["#DTC", "#ads"] },
+    { "platform": "X", "day": 7, "text": "Drop your DTC product below and I'll write the UGC hook I'd test first 🧵", "hashtags": ["#ecommerce", "#UGC"] }
+  ],
+  "emailSequence": [
+    { "step": 1, "subject": "Your first 3 UGC ads are on the way 👇", "body": "Welcome! Send us your product page and offer, and we'll script and produce your first 3 UGC-style ads — on us. Reply here with anything specific about your audience; a real human reads these and briefs the batch." },
+    { "step": 2, "subject": "Why volume beats the 'perfect' ad", "body": "The brands winning on paid social test 5x more creative, not 5x better creative. Our monthly batches let you run more hooks, find winners faster, and beat ad fatigue. Here's how to structure your first test." },
+    { "step": 3, "subject": "6 hooks, 6 spokespeople, 1 product", "body": "The biggest lever in UGC is the hook. We deliver multiple hook and spokesperson variations per concept so you can find what stops the scroll for your audience. Here's our hook framework you can steal." },
+    { "step": 4, "subject": "How an agency cut CPA 31%", "body": "An agency partner ran 28 of our AI UGC ads across 4 client accounts and cut CPA by 31% on the winners. The secret wasn't one genius ad — it was volume plus fast iteration. Here's their exact playbook." },
+    { "step": 5, "subject": "Keep your ad account fed", "body": "Your free ads are in. Lock in a monthly plan and we'll keep a fresh batch of UGC-style creative flowing so your account never runs dry. Plans start at $499/month — less than a single creator shoot. Pick your plan here." }
+  ],
+  "seoKeywords": [
+    { "keyword": "ai ugc video ads for ecommerce", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "ugc video ads service for dtc brands", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "ai spokesperson video generator", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "tiktok ad creative agency", "intent": "commercial", "difficulty": "high" },
+    { "keyword": "how to make ugc ads at scale", "intent": "informational", "difficulty": "low" },
+    { "keyword": "ai video ads for tiktok and reels", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "ugc creator alternative ai", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "best ugc ad examples dtc", "intent": "informational", "difficulty": "low" },
+    { "keyword": "how to beat ad creative fatigue", "intent": "informational", "difficulty": "low" },
+    { "keyword": "paid social creative testing strategy", "intent": "informational", "difficulty": "medium" },
+    { "keyword": "ai video ad maker for brands", "intent": "commercial", "difficulty": "medium" },
+    { "keyword": "ugc subscription service", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "how much does a ugc creator cost", "intent": "informational", "difficulty": "low" },
+    { "keyword": "scale tiktok ad creative production", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "digital human video ads", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "best ai tools for dtc advertising 2026", "intent": "commercial", "difficulty": "high" },
+    { "keyword": "ugc style video ads generator", "intent": "commercial", "difficulty": "low" },
+    { "keyword": "high converting tiktok ad hooks", "intent": "informational", "difficulty": "low" },
+    { "keyword": "creative volume for paid ads", "intent": "informational", "difficulty": "low" },
+    { "keyword": "ai ugc ads free trial", "intent": "commercial", "difficulty": "low" }
+  ],
+  "adVariations": [
+    { "headline": "30 UGC ads a month, on tap", "body": "AI spokespeople deliver scroll-stopping UGC-style ads every month. First 3 free.", "angle": "volume" },
+    { "headline": "No creators. No shoots. No reshoots.", "body": "Skip casting and shipping. Get UGC-style ads back in days, not weeks.", "angle": "ease-of-use" },
+    { "headline": "Beat ad fatigue for good", "body": "Keep your account fed with fresh creative so your winners never burn out.", "angle": "pain-point" },
+    { "headline": "An agency cut CPA 31%", "body": "More variations, faster testing, lower cost per acquisition. See how.", "angle": "social-proof" },
+    { "headline": "Cheaper than one creator shoot", "body": "A full month of UGC-style ads for the price of a single video. Try it free.", "angle": "roi" }
+  ]
+}

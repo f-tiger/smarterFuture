@@ -1,0 +1,71 @@
+{
+  "projectId": "productized-service",
+  "projectName": "生产化服务 (Productized Service)",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "Unlimited Design And Content, Delivered In 48 Hours",
+    "subhead": "A flat monthly fee, an unlimited request queue, and AI-augmented delivery in two business days. Built for startups and SMBs who need output, not headcount. From $1,999/mo.",
+    "bullets": [
+      "Submit unlimited requests, we work through your queue one by one",
+      "Most tasks delivered within 48 hours, no surprises",
+      "Flat monthly price, cancel anytime, no contracts or hiring",
+      "AI-augmented team that moves faster without cutting quality"
+    ],
+    "cta": "Book A Free Intro Call",
+    "faq": [
+      {"q": "What does unlimited actually mean?", "a": "You can add as many requests to your queue as you want. We deliver them one (or two) at a time, typically within 48 hours each."},
+      {"q": "Is there a contract?", "a": "No long-term commitment. It's a flat monthly subscription you can pause or cancel anytime."},
+      {"q": "How is AI used?", "a": "We use AI to accelerate research, drafts, and iterations, then real specialists refine and approve everything before it ships."},
+      {"q": "What if I don't like a deliverable?", "a": "Unlimited revisions are included. We keep iterating until it's right, at no extra cost."}
+    ]
+  },
+  "socialPosts": [
+    {"platform": "LinkedIn", "day": 1, "text": "Hiring a designer takes 6 weeks and $90k a year. Our productized service gives you unlimited design and content for a flat monthly fee, with most tasks delivered in 48 hours. From $1,999/mo, cancel anytime.", "hashtags": ["#startups", "#design"]},
+    {"platform": "X", "day": 1, "text": "Unlimited design requests. 48-hour delivery. Flat monthly price. No hiring, no contracts. This is how lean teams ship faster. From $1,999/mo.", "hashtags": ["#productized", "#startups"]},
+    {"platform": "X", "day": 2, "text": "Your design backlog isn't a talent problem. It's a throughput problem. We clear it for a flat fee, one request at a time, 48 hours each.", "hashtags": ["#design", "#smb"]},
+    {"platform": "LinkedIn", "day": 2, "text": "AI alone gives you fast drafts. AI plus a senior team gives you finished work you can actually ship. That's the whole point of our productized service. Unlimited queue, 48-hour delivery, flat fee.", "hashtags": ["#ai", "#contentmarketing"]},
+    {"platform": "X", "day": 3, "text": "No more chasing freelancers. No more $100k hires. Just a queue you fill and work that ships in 48 hours. From $1,999/mo.", "hashtags": ["#productized", "#founders"]},
+    {"platform": "LinkedIn", "day": 4, "text": "SMBs don't need another full-time hire on payroll. They need reliable output. Our flat-fee model delivers unlimited design and content in 48 hours, and you can cancel any month. Predictable cost, predictable speed.", "hashtags": ["#smb", "#marketing"]},
+    {"platform": "X", "day": 5, "text": "Flat fee. Unlimited requests. 48-hour turnaround. Unlimited revisions. We took everything painful about agencies and deleted it.", "hashtags": ["#design", "#productized"]},
+    {"platform": "LinkedIn", "day": 5, "text": "Math founders love: one senior hire costs ~$8k/mo loaded. Our service starts at $1,999/mo with unlimited requests and no recruiting. Same output, a quarter of the cost, zero hiring risk.", "hashtags": ["#startups", "#growth"]},
+    {"platform": "X", "day": 6, "text": "We're AI-augmented, which means faster drafts and more iterations. But a real specialist approves every deliverable before it reaches you. Speed without the slop.", "hashtags": ["#ai", "#design"]},
+    {"platform": "X", "day": 7, "text": "Stop waiting weeks for design and content. Fill your queue today, get your first deliverable in 48 hours. Book a free intro call.", "hashtags": ["#productized", "#startups"]}
+  ],
+  "emailSequence": [
+    {"step": 1, "subject": "Your design queue is officially open", "body": "Welcome aboard. Here's how it works: add any design or content request to your queue, and we deliver it, typically within 48 hours. Most clients start by loading 3 to 5 requests so we always have something to work on. Need help prioritizing? Just reply."},
+    {"step": 2, "subject": "The trick to getting more out of your queue", "body": "Clients who batch their requests see the fastest turnaround. Instead of waiting for one task to finish, stack your queue so we move straight to the next. Here's a 2-minute guide to structuring requests for maximum throughput."},
+    {"step": 3, "subject": "How a 6-person startup outpaced its competitors", "body": "One client used our flat-fee service to ship a full brand refresh and 30 content pieces in a single month, with no new hires. Here's the exact way they used the queue to move that fast, you can copy it this week."},
+    {"step": 4, "subject": "Quick check-in on your first deliverables", "body": "You've had a few deliverables come through now. How's the quality and speed feeling? Hit reply with one thing we could do better. Unlimited revisions are always included, and your feedback shapes how we work with you."},
+    {"step": 5, "subject": "Scale up, or pause anytime, your call", "body": "Need more throughput this month? You can upgrade to a second concurrent slot so two requests move at once. Slower month coming? Pause your subscription and resume whenever. No contracts, ever. Let's talk about what fits your roadmap."}
+  ],
+  "seoKeywords": [
+    {"keyword": "unlimited design service monthly", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "productized service for startups", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "flat fee design subscription", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "what is a productized service", "intent": "informational", "difficulty": "low"},
+    {"keyword": "design as a subscription", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "ai content creation service for business", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "unlimited graphic design subscription", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "outsource design for startups", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to scale content without hiring", "intent": "informational", "difficulty": "low"},
+    {"keyword": "monthly content marketing service", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "design subscription vs hiring designer", "intent": "informational", "difficulty": "low"},
+    {"keyword": "fast turnaround design agency", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "ai augmented design agency", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "cost of hiring a full time designer", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "best design subscription services 2026", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "content service for small business", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "unlimited revisions design service", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how productized services work", "intent": "informational", "difficulty": "low"},
+    {"keyword": "subscription design for smb", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "48 hour design delivery service", "intent": "commercial", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {"headline": "Unlimited Design For A Flat Fee", "body": "Fill your queue, get most tasks back in 48 hours. No hiring, no contracts. From $1,999/mo.", "angle": "flat-fee-unlimited"},
+    {"headline": "A Designer Costs $90k. We Cost Less.", "body": "Same output, a quarter of the cost, zero recruiting. Cancel anytime. Book a free intro call.", "angle": "cost-comparison"},
+    {"headline": "48-Hour Delivery, Every Time", "body": "Stop waiting weeks. Our AI-augmented team ships design and content in two business days.", "angle": "speed"},
+    {"headline": "Speed Without The AI Slop", "body": "AI accelerates the work, senior specialists approve every deliverable before it ships.", "angle": "quality-with-ai"},
+    {"headline": "Predictable Cost, Predictable Output", "body": "Flat monthly price, unlimited requests, unlimited revisions. Built for startups and SMBs.", "angle": "predictability"}
+  ]
+}

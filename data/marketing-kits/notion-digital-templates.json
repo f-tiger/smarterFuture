@@ -1,0 +1,71 @@
+{
+  "projectId": "notion-digital-templates",
+  "projectName": "Notion 模板与数字产品店",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "The Notion System That Finally Makes You Feel In Control",
+    "subhead": "Polished, ready-to-use Notion templates and systems for freelancers, students, and early founders. Buy once for $19 to $49, own it forever.",
+    "bullets": [
+      "Plug-and-play in under 5 minutes, no Notion expertise required",
+      "Designed by a real operator, not a template factory",
+      "One-time payment, lifetime updates, no subscriptions",
+      "Battle-tested layouts that look as good as they work"
+    ],
+    "cta": "Get The Template, $29",
+    "faq": [
+      {"q": "Do I need to know Notion?", "a": "No. You'll get a one-click duplicate link and a short setup guide. If you can open a page, you can use this."},
+      {"q": "Is this a subscription?", "a": "Never. It's a one-time purchase between $19 and $49. You own it forever and get free updates."},
+      {"q": "What if it's not for me?", "a": "We offer a no-hassle refund within 14 days. If it doesn't click for you, just ask."},
+      {"q": "Can I customize it?", "a": "Completely. Every template is fully editable so you can shape it to your own workflow."}
+    ]
+  },
+  "socialPosts": [
+    {"platform": "X", "day": 1, "text": "Your tasks, notes, and goals are scattered across 5 apps. I built one Notion system that holds all of it, beautifully. One-time $29, yours forever.", "hashtags": ["#notion", "#productivity"]},
+    {"platform": "LinkedIn", "day": 1, "text": "Freelancers don't need another app, they need one calm place to run their business. That's why I built a Notion system for client work, finances, and goals. One purchase, no subscription, lifetime updates.", "hashtags": ["#notion", "#freelance"]},
+    {"platform": "X", "day": 2, "text": "Spent 3 weeks designing this Notion dashboard so you can set it up in 5 minutes. That's the trade I'm happy to make. $29, own it forever.", "hashtags": ["#notion", "#buildinpublic"]},
+    {"platform": "X", "day": 3, "text": "Students: stop building your study system from scratch every semester. Duplicate this Notion template once and never start over again.", "hashtags": ["#studytok", "#notion"]},
+    {"platform": "LinkedIn", "day": 3, "text": "Early founders waste hours stitching together tools. My Notion system gives you a CRM, task board, and goal tracker in one duplicate link. $49 one-time, no recurring fee.", "hashtags": ["#startups", "#notion"]},
+    {"platform": "X", "day": 4, "text": "No subscription. No login. No upsell. Just a Notion template that works, for a one-time $29. Remember when software felt like that?", "hashtags": ["#notion", "#nocode"]},
+    {"platform": "X", "day": 5, "text": "Before: 5 sticky notes, 2 apps, and a vague sense of dread. After: one Notion dashboard. The peace of mind is the real product.", "hashtags": ["#productivity", "#notion"]},
+    {"platform": "LinkedIn", "day": 5, "text": "I sell finished systems, not blank templates. Every duplicate comes pre-filled with examples so you start working, not configuring. Built for freelancers, students, and founders. From $19.", "hashtags": ["#notion", "#productivity"]},
+    {"platform": "X", "day": 6, "text": "Fully editable. One-click duplicate. Lifetime free updates. This is what buying a digital product should feel like. $29 on Gumroad.", "hashtags": ["#gumroad", "#notion"]},
+    {"platform": "X", "day": 7, "text": "If your Notion is a mess of half-finished pages, this is your reset button. Duplicate once, feel in control. $29.", "hashtags": ["#notion", "#productivity"]}
+  ],
+  "emailSequence": [
+    {"step": 1, "subject": "Welcome, your Notion reset starts here", "body": "Thanks for grabbing the template. Here's your one-click duplicate link and a 3-minute setup video. By the time your coffee is done, your new system will be live. Reply if you get stuck, I answer every email myself."},
+    {"step": 2, "subject": "The fastest way to make it yours", "body": "Most people stop at duplicating. The magic happens when you customize one view to match how you actually work. Here's the single tweak that makes this template feel like it was built just for you."},
+    {"step": 3, "subject": "How freelancers use this to win back time", "body": "A freelancer who bought this last month told me she stopped using three other apps. Here's exactly how she set up her client pipeline inside the template, copy her workflow in 5 minutes."},
+    {"step": 4, "subject": "A small ask (and a thank you)", "body": "You've had the template a few days now. Is it clicking? Hit reply and tell me one thing you'd improve. Every update I ship comes from emails like this, and you'll get those updates free, forever."},
+    {"step": 5, "subject": "Two more systems you might love", "body": "If this template earned a spot in your daily routine, you might like my Goal OS and Finance Tracker, both one-time purchases, both fully editable. Bundle all three and save 20%. Take a look here."}
+  ],
+  "seoKeywords": [
+    {"keyword": "best notion templates for freelancers", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "notion template for students", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "notion crm template", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to organize freelance work in notion", "intent": "informational", "difficulty": "low"},
+    {"keyword": "notion productivity system", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "best notion dashboard template", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "notion templates for startups", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "free notion template ideas", "intent": "informational", "difficulty": "low"},
+    {"keyword": "notion goal tracker template", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how to set up notion for business", "intent": "informational", "difficulty": "low"},
+    {"keyword": "notion finance tracker template", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "best digital products to sell on gumroad", "intent": "informational", "difficulty": "high"},
+    {"keyword": "notion template for solopreneurs", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how to use notion as a student", "intent": "informational", "difficulty": "low"},
+    {"keyword": "notion second brain template", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "aesthetic notion templates", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "notion client management template", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "best notion setup for productivity", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "buy notion template", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "notion template for early stage founders", "intent": "commercial", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {"headline": "Your Whole Life In One Notion Page", "body": "A polished, ready-to-use system for freelancers and students. One-time $29, yours forever.", "angle": "all-in-one"},
+    {"headline": "No Subscriptions. Ever.", "body": "Buy once for $19 to $49, own it for life with free updates. The way digital products should be.", "angle": "ownership"},
+    {"headline": "Set Up In 5 Minutes, Use For Years", "body": "One-click duplicate, pre-filled examples, fully editable. Start working, not configuring.", "angle": "ease-of-use"},
+    {"headline": "Built By An Operator, Not A Factory", "body": "Every template is battle-tested in real freelance and startup work. Get yours from $19.", "angle": "credibility"},
+    {"headline": "From Chaos To Calm In One Duplicate", "body": "Stop juggling 5 apps. One Notion system holds it all. 14-day refund if it's not for you.", "angle": "transformation"}
+  ]
+}

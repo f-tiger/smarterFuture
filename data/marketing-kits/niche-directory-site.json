@@ -1,0 +1,70 @@
+{
+  "projectId": "niche-directory-site",
+  "projectName": "利基目录/导航站",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。",
+  "landingCopy": {
+    "hero": "The fastest way to find — and compare — the right tool for the job.",
+    "subhead": "An independent, hand-checked directory of the best tools and services in your niche. Filter by what actually matters, compare side by side, and skip the hours of tab-juggling.",
+    "bullets": [
+      "Every listing vetted, categorized, and kept current — no dead links, no fluff",
+      "Side-by-side comparisons on price, features, and fit",
+      "Filter by use case, budget, and platform to shortlist in minutes",
+      "Free for buyers; vendors can apply to get listed and reach ready-to-buy users"
+    ],
+    "cta": "Browse the directory free",
+    "faq": [
+      {"q": "Is it free to use?", "a": "Yes, browsing, filtering, and comparing are completely free for buyers. We make money from optional paid listings, affiliate links, and ads — all clearly disclosed."},
+      {"q": "How do you decide what gets listed?", "a": "Every tool is reviewed against the same criteria before it appears. Vendors can pay for enhanced placement, but paid status is always labeled and never changes our independent assessment of fit."},
+      {"q": "I'm a vendor — how do I get listed?", "a": "Apply through our 'Get Listed' page. We'll review your tool, and once approved you can claim your profile and reach users who are actively comparing options in your category."}
+    ]
+  },
+  "socialPosts": [
+    {"platform": "X", "day": 1, "text": "Looking for the right tool and stuck with 30 open tabs and 10 'top 10' listicles? We built the directory that ends that: vetted listings, real filters, side-by-side compare. Free for buyers.", "hashtags": ["#tools", "#directory"]},
+    {"platform": "LinkedIn", "day": 1, "text": "Choosing a tool shouldn't take a whole afternoon. We built an independent, hand-checked directory for our niche so you can filter by use case and budget, compare options side by side, and shortlist in minutes — not days. Free to browse.", "hashtags": ["#productivity", "#tools"]},
+    {"platform": "X", "day": 2, "text": "Every listing on our directory is vetted, categorized, and checked for dead links. No SEO spam, no pay-to-win rankings. Just the right tool, faster. Browse free.", "hashtags": ["#directory", "#tools"]},
+    {"platform": "X", "day": 3, "text": "New comparison pages live: filter by price, features, and platform, then put two options head to head. Decide in minutes. Link in bio.", "hashtags": ["#compare", "#tools"]},
+    {"platform": "LinkedIn", "day": 3, "text": "Vendors: your buyers are already on our directory comparing options in your category. Getting listed puts you in front of people at the exact moment they're choosing. Apply on the 'Get Listed' page — we review every submission.", "hashtags": ["#B2B", "#leadgen"]},
+    {"platform": "X", "day": 4, "text": "We label everything. Paid placements are marked as paid. Affiliate links are disclosed. Our independent take never goes up for sale. That's the only way a directory stays useful.", "hashtags": ["#transparency", "#tools"]},
+    {"platform": "X", "day": 5, "text": "Stop trusting random 'best of' blogs written to push one affiliate link. Our directory shows you the field, the trade-offs, and the fit. Free for buyers.", "hashtags": ["#directory", "#research"]},
+    {"platform": "LinkedIn", "day": 5, "text": "The two-sided value is simple: buyers get an honest, filterable shortlist for free; vendors get qualified visibility at the moment of decision. We protect the buyer experience first — because that's what makes the vendor side worth paying for.", "hashtags": ["#marketplace", "#SaaS"]},
+    {"platform": "X", "day": 6, "text": "Found the perfect tool in two minutes flat? That's the whole point. Browse the directory, filter, compare, done. Link in bio.", "hashtags": ["#tools", "#productivity"]},
+    {"platform": "LinkedIn", "day": 7, "text": "Whether you're a buyer trying to choose or a vendor trying to be chosen, the directory works for you: free, filterable comparisons for buyers, and vetted, labeled visibility for vendors. Browse or apply to get listed today.", "hashtags": ["#directory", "#B2B"]}
+  ],
+  "emailSequence": [
+    {"step": 1, "subject": "Welcome — here's how to find your tool in 2 minutes", "body": "Glad you're here. The directory is built to save you hours: use the filters to narrow by use case, budget, and platform, then open any two listings side by side to compare. Start with our 'most compared' category — it's where most people find their match fastest. Free to browse, always."},
+    {"step": 2, "subject": "How we keep the directory honest", "body": "A directory is only worth using if you can trust it. So here's our rule: every tool is vetted against the same criteria, paid placements are clearly labeled as paid, and affiliate links are disclosed. Our independent assessment of fit is never for sale. That's what keeps the shortlist useful — for you, not for whoever paid the most."},
+    {"step": 3, "subject": "The 3 filters most people forget to use", "body": "Most people sort by popularity and stop there. The buyers who choose well use three filters: budget (so you don't fall for a tool you can't justify), use case (fit beats features), and platform (skip anything that won't work in your stack). Try all three on your next search and watch the shortlist shrink to the real contenders."},
+    {"step": 4, "subject": "Run a vendor? Your buyers are already here", "body": "If you build or sell a tool in this niche, here's something worth knowing: people are comparing options in your category on the directory right now. Getting listed puts you in front of them at the decision moment. Apply on the 'Get Listed' page — we review every submission, and approved vendors can claim and customize their profile."},
+    {"step": 5, "subject": "Help us make the directory better", "body": "You've used the filters and the comparisons — now help us improve them. Two quick asks: tell us about any tool we're missing, and let us know which comparison you wish we had. The best directories are built with their users. Thanks for being one of ours."}
+  ],
+  "seoKeywords": [
+    {"keyword": "best tools directory for [niche]", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "compare [niche] tools side by side", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "top [niche] software list 2026", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to choose the right tool for my business", "intent": "informational", "difficulty": "low"},
+    {"keyword": "alternatives to popular [niche] tool", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "cheapest [niche] software comparison", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "best free [niche] tools", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "how to find vetted software vendors", "intent": "informational", "difficulty": "low"},
+    {"keyword": "[niche] tool reviews and ratings", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "directory of [niche] services", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how to compare software features", "intent": "informational", "difficulty": "low"},
+    {"keyword": "best [niche] tool for small business", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to get my tool listed in a directory", "intent": "informational", "difficulty": "low"},
+    {"keyword": "[niche] software pricing comparison", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "which [niche] tool should i use", "intent": "informational", "difficulty": "low"},
+    {"keyword": "enterprise vs small business [niche] tools", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to shortlist software quickly", "intent": "informational", "difficulty": "low"},
+    {"keyword": "trusted [niche] tool recommendations", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "paid listing for software directory", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "how to evaluate a new tool before buying", "intent": "informational", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {"headline": "Find the right tool in 2 minutes", "body": "Vetted listings, real filters, side-by-side comparisons. Skip the 30 tabs. Free for buyers.", "angle": "buyer / speed"},
+    {"headline": "Stop trusting random 'best of' blogs", "body": "An independent directory that shows the full field and the trade-offs — not one paid affiliate pick.", "angle": "buyer / trust"},
+    {"headline": "Compare on what actually matters", "body": "Filter by price, features, and fit, then put two tools head to head. Decide with confidence.", "angle": "buyer / comparison"},
+    {"headline": "Your buyers are comparing right now", "body": "Get your tool listed and reach users at the exact moment they choose. Apply to get listed.", "angle": "vendor / leadgen"},
+    {"headline": "Labeled, vetted, and worth the visibility", "body": "We protect the buyer experience, which is what makes a listing worth it. Get in front of ready-to-buy users.", "angle": "vendor / trust"}
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "projectId": "local-lead-gen",
+  "projectName": "本地商家 Lead-Gen 站",
+  "generatedDate": "2026-06-25",
+  "note": "⚠️ 这是 automation/marketing.mjs 自动生成的营销物料（示范）。发布前请人工抽查文案合规与品牌口径；接入发布/投放账户需人工授权。本项目以本地服务商家为目标客户，文案中涉及线索独家性、回报承诺等需结合实际履约能力人工核对，避免夸大宣传与监管风险。",
+  "landingCopy": {
+    "hero": "Exclusive, Ready-to-Buy Leads Delivered Straight to Your Phone",
+    "subhead": "We rank #1 in your city for your service, then send every qualified call and form straight to you — no shared leads, no agencies, no long contracts. Pay only for leads that fit your business.",
+    "bullets": [
+      "100% exclusive: every lead is yours alone, never sold to 3 competitors like the big lead marketplaces do.",
+      "High-intent only: these are homeowners and clients actively searching 'plumber near me', 'roof repair', or 'dentist open now' — not cold lists.",
+      "Simple pricing that scales: $25–$80 per qualified lead, or a flat $500–$1,500/month for all the volume our ranking site produces.",
+      "Replace bad leads for free: if a call is spam, a wrong number, or out of your service area, we don't charge you.",
+      "No website, SEO, or ad budget needed on your end — we own the ranking asset and the risk."
+    ],
+    "cta": "Claim Your City & Service — Book a 15-Min Call",
+    "faq": [
+      {
+        "q": "How is this different from HomeAdvisor, Thumbtack, or Angi?",
+        "a": "Those platforms sell the same lead to 3–5 contractors, so you're racing competitors on price. Our leads are 100% exclusive to you — when a prospect contacts our site, only your phone rings."
+      },
+      {
+        "q": "What if a lead isn't a good fit?",
+        "a": "Spam calls, wrong numbers, robocalls, and out-of-area requests are never billed. We track every lead via call recording and form capture, so you only pay for real, qualified opportunities."
+      },
+      {
+        "q": "Do I have to sign a long contract?",
+        "a": "No. Month-to-month. We earn your business with results every 30 days. Most clients stay because the leads close — but you're never locked in."
+      },
+      {
+        "q": "How fast will I start getting leads?",
+        "a": "Our ranking site is often already live and producing calls in your market before we onboard you. In most cases you receive your first qualified leads within 7–14 days."
+      }
+    ]
+  },
+  "socialPosts": [
+    {
+      "platform": "LinkedIn",
+      "day": 1,
+      "text": "Most local service businesses pay for the SAME lead 4 other contractors are also chasing. That's not marketing — that's a bidding war. We rank a site #1 in your city and send you exclusive leads only. One search, one phone rings: yours.",
+      "hashtags": ["#LocalSEO", "#LeadGeneration", "#HomeServices"]
+    },
+    {
+      "platform": "X",
+      "day": 1,
+      "text": "Plumbers, roofers, lawyers, dentists: you don't have a sales problem. You have a 'where do new clients come from' problem. We rank #1 locally and hand you exclusive, ready-to-buy leads. Pay per lead or flat monthly.",
+      "hashtags": ["#LeadGen", "#SmallBusiness"]
+    },
+    {
+      "platform": "LinkedIn",
+      "day": 2,
+      "text": "Case in point: a roofing client was buying shared leads at $90 each and closing 1 in 12. We gave him EXCLUSIVE leads at $65. Close rate jumped to 1 in 4. Same spend, 3x the jobs. Exclusivity is the whole game.",
+      "hashtags": ["#Roofing", "#LeadGeneration"]
+    },
+    {
+      "platform": "X",
+      "day": 3,
+      "text": "Shared leads = 5 contractors calling the same homeowner in 60 seconds. Exclusive leads = your phone is the only one that rings. Which would you rather pay for?",
+      "hashtags": ["#HomeServices", "#LeadGen"]
+    },
+    {
+      "platform": "LinkedIn",
+      "day": 4,
+      "text": "We don't sell you ads. We don't sell you 'SEO services'. We own a site that already ranks #1 for your service in your city, and we route those high-intent calls straight to you. You only pay for leads that fit. The risk is on us.",
+      "hashtags": ["#LocalMarketing", "#LeadGeneration", "#SMB"]
+    },
+    {
+      "platform": "X",
+      "day": 4,
+      "text": "$25–$80 per exclusive, high-intent lead. Or $500–$1,500/mo for all the volume. No setup fees. No long contracts. Spam and wrong-area leads are free. We replace what doesn't qualify.",
+      "hashtags": ["#LeadGen", "#LocalBusiness"]
+    },
+    {
+      "platform": "LinkedIn",
+      "day": 5,
+      "text": "Question for local service owners: how many leads do you LOSE because you were on a ladder, in a meeting, or in a patient's chair? Our system captures every call and form 24/7 so no high-intent prospect slips away.",
+      "hashtags": ["#LeadGeneration", "#HomeServices", "#Dentist"]
+    },
+    {
+      "platform": "X",
+      "day": 6,
+      "text": "Ranking takes months and a real budget. We've already done it for your service in your city. Instead of competing for the #1 spot, just rent the leads from it. First leads in 7–14 days.",
+      "hashtags": ["#LocalSEO", "#LeadGen"]
+    },
+    {
+      "platform": "LinkedIn",
+      "day": 7,
+      "text": "We only work with ONE business per service, per city. Once a plumber claims your market, that exclusive lead flow is off the table for every competitor. If you want it locked to your phone, let's talk this week.",
+      "hashtags": ["#Exclusive", "#LeadGeneration", "#LocalBusiness"]
+    },
+    {
+      "platform": "X",
+      "day": 7,
+      "text": "We give one plumber, one roofer, one lawyer per city the exclusive lead flow from a #1-ranked site. When your competitor claims it, you're locked out. DM 'CITY' to check if yours is still open.",
+      "hashtags": ["#LeadGen", "#SmallBusiness"]
+    }
+  ],
+  "emailSequence": [
+    {
+      "step": 1,
+      "subject": "Your phone should ring before your competitor's does",
+      "body": "Hi {{FirstName}},\n\nQuick question: when a homeowner in {{City}} searches '{{Service}} near me' right now, whose phone rings?\n\nIf you buy leads from the big platforms, the answer is: yours AND four of your competitors'. You're all calling the same person, racing to the bottom on price.\n\nWe do it differently. We own a site that ranks #1 in {{City}} for {{Service}}, and we route every qualified call and form to ONE business — exclusively. No sharing. No bidding war.\n\nWant to see if your city and service are still open? Reply 'OPEN' and I'll check.\n\n— {{SenderName}}"
+    },
+    {
+      "step": 2,
+      "subject": "Why shared leads quietly kill your close rate",
+      "body": "Hi {{FirstName}},\n\nHere's the math nobody on the big lead platforms shows you:\n\nA shared lead sold to 5 contractors converts at maybe 1 in 12. An exclusive lead — where you're the only call — closes at 1 in 3 to 1 in 4.\n\nSame lead cost. Triple the jobs. The difference is exclusivity.\n\nOur leads are 100% yours. When our #1-ranked {{City}} site captures a {{Service}} request, only your phone rings.\n\nWant the numbers for your market? Reply and I'll send a quick breakdown.\n\n— {{SenderName}}"
+    },
+    {
+      "step": 3,
+      "subject": "You never pay for spam or wrong-area calls",
+      "body": "Hi {{FirstName}},\n\nOne worry I hear a lot: 'What if I pay for junk leads?'\n\nFair. So here's our rule: spam calls, robocalls, wrong numbers, and anyone outside your service area are NEVER billed. We track every lead with call recording and form capture, so you only pay for real, qualified opportunities.\n\nPricing is simple: $25–$80 per qualified lead, or a flat $500–$1,500/month for all the volume our site produces. Month-to-month. No setup fee.\n\nWant to lock in {{City}}? Reply 'YES'.\n\n— {{SenderName}}"
+    },
+    {
+      "step": 4,
+      "subject": "How a {{City}} roofer 3x'd his booked jobs",
+      "body": "Hi {{FirstName}},\n\nA roofer in a market like yours was paying ~$90/lead on a shared platform and closing about 1 in 12. He switched to our exclusive leads at $65 each.\n\nHis close rate jumped to roughly 1 in 4. Same monthly spend — three times the jobs booked. The only variable that changed was exclusivity.\n\nWe've already built and ranked the asset for {{Service}} in {{City}}. You don't pay for SEO, ads, or a website. You just get the leads it produces.\n\nReady to be the only {{Service}} business on it? Reply and let's grab 15 minutes.\n\n— {{SenderName}}"
+    },
+    {
+      "step": 5,
+      "subject": "Last note — {{City}} {{Service}} is one slot only",
+      "body": "Hi {{FirstName}},\n\nFinal note from me. We give the exclusive lead flow from our #1-ranked {{City}} site to ONE {{Service}} business — and right now that slot is still open.\n\nThe moment a competitor claims it, that flow is locked to their phone and off the table for everyone else in {{City}}.\n\nNo long contract, month-to-month, junk leads free, first leads usually in 7–14 days. The risk is on us.\n\nIf you want it, just reply 'CLAIM' and I'll send the booking link. If now's not the time, no worries — I'll close the file.\n\n— {{SenderName}}"
+    }
+  ],
+  "seoKeywords": [
+    {"keyword": "exclusive leads for contractors", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "buy plumbing leads", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "roofing leads for sale", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "pay per lead service", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "local lead generation for service businesses", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "exclusive vs shared leads", "intent": "informational", "difficulty": "low"},
+    {"keyword": "how to get more local customers", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "best lead generation for plumbers", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "dentist new patient leads", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "personal injury lawyer leads", "intent": "commercial", "difficulty": "high"},
+    {"keyword": "HomeAdvisor alternatives", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "are shared leads worth it", "intent": "informational", "difficulty": "low"},
+    {"keyword": "how much do contractor leads cost", "intent": "informational", "difficulty": "low"},
+    {"keyword": "lead generation company near me", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "rank and rent SEO", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "get more roofing jobs", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "qualified home service leads", "intent": "commercial", "difficulty": "medium"},
+    {"keyword": "how to grow a local service business", "intent": "informational", "difficulty": "medium"},
+    {"keyword": "monthly lead generation packages", "intent": "commercial", "difficulty": "low"},
+    {"keyword": "stop paying for shared leads", "intent": "informational", "difficulty": "low"}
+  ],
+  "adVariations": [
+    {
+      "headline": "Stop Sharing Leads With 5 Competitors",
+      "body": "Get 100% exclusive, high-intent leads in your city. When a prospect searches, only your phone rings. $25–$80/lead or flat monthly. Junk leads free.",
+      "angle": "exclusivity / anti-shared-lead"
+    },
+    {
+      "headline": "We Rank #1. You Get the Calls.",
+      "body": "No website, SEO, or ad budget needed. We own the #1-ranked site for your service in your city and route every qualified call straight to you.",
+      "angle": "done-for-you / no risk on the contractor"
+    },
+    {
+      "headline": "Only Pay for Leads That Fit",
+      "body": "Spam, wrong numbers, and out-of-area calls are never billed. Real, qualified opportunities only. Month-to-month, no long contracts.",
+      "angle": "risk reversal / pay for results"
+    },
+    {
+      "headline": "One Plumber Per City. Is Yours Taken?",
+      "body": "We lock exclusive lead flow to a single business per service, per market. When your competitor claims it, you're out. Check your city now.",
+      "angle": "scarcity / territory exclusivity"
+    },
+    {
+      "headline": "3x Your Booked Jobs Without More Ad Spend",
+      "body": "Exclusive leads close at 1 in 4 — shared leads at 1 in 12. Same cost, triple the jobs. Book a 15-minute call to claim your market.",
+      "angle": "ROI / close-rate proof"
+    }
+  ]
+}
