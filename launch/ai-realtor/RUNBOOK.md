@@ -27,6 +27,19 @@
 
 > 在你填之前，站点处于**演示模式**：表单可点但不真正写库、广告显示占位、联盟是示例链接——可安全公开演示。
 
+## 二·五、💰 立刻可卖的数字产品《AI Realtor Toolkit》
+我已做好一个**真实可售卖的数字产品**（60 prompts + 15 邮件模板 + 8 房型框架 + fair-housing 清单 + 社媒 swipe），约 52KB 单文件。
+> ⚠️ 为避免被白嫖，**产品文件不放进公开仓库**（已 gitignore）。我会把它直接发给你（也在容器内 `product-assets/ai-realtor-toolkit/AI-Realtor-Toolkit.html`）。
+
+**开卖只需 ~5 分钟（这是到「第一笔收入」最短路径）：**
+1. 注册 [Gumroad](https://gumroad.com)（或 Lemon Squeezy）→ New Product → Digital product。
+2. 上传 `AI-Realtor-Toolkit.html`（可先在浏览器打开→打印为 PDF 再上传，体验更好）。
+3. 定价 **$29**（划线原价 $49），标题/描述可直接用 `toolkit.html` 销售页的文案。
+4. 拿到购买链接，填进 [`config.js`](./config.js) 的 `productCheckoutUrl` → push → 销售页「Buy now」按钮即直达收款。
+5. 用 `data/marketing-kits/niche-ai-wrapper.json` 的社媒/邮件物料推广该产品。
+
+> 在你填 `productCheckoutUrl` 之前，销售页已上线（演示模式：购买按钮回退到早鸟名单），可安全公开。
+
 ## 三、获客（营销动作，可半自动）
 营销物料已生成在 `data/marketing-kits/niche-ai-wrapper.json`，直接取用：
 1. **SEO**（自动）：5 篇指南已上线，提交 Google Search Console 收录；后续每周用 `marketing.mjs` 扩充选题。

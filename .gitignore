@@ -3,3 +3,6 @@ automation/node_modules/
 .env
 .DS_Store
 *.log
+
+# 私有可售产品（勿公开提交，避免被白嫖）
+product-assets/

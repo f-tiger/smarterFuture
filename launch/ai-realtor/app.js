@@ -45,6 +45,25 @@
     }
   });
 
+  // 价格展示
+  document.querySelectorAll('[data-price]').forEach(function (e) { e.textContent = C.productPrice || '$29'; });
+  document.querySelectorAll('[data-price-old]').forEach(function (e) {
+    if (C.productPriceOld) { e.textContent = C.productPriceOld; } else { e.style.display = 'none'; }
+  });
+
+  // 购买按钮：有 checkout 链接则跳转，否则回退到等待名单
+  document.querySelectorAll('[data-buy]').forEach(function (el) {
+    if (C.productCheckoutUrl) {
+      el.setAttribute('href', C.productCheckoutUrl);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener');
+    } else {
+      el.setAttribute('href', '#waitlist');
+      var hint = el.getAttribute('data-buy-hint');
+      if (hint) { var h = document.querySelector(hint); if (h) h.textContent = '（演示：配置 productCheckoutUrl 后此按钮直达收款页）'; }
+    }
+  });
+
   // 邮件名单表单
   document.querySelectorAll('form[data-capture]').forEach(function (form) {
     form.addEventListener('submit', function (ev) {

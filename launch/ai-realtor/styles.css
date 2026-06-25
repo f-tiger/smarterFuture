@@ -40,3 +40,12 @@ footer{border-top:1px solid var(--line);background:var(--ink);color:#94a3b8;font
 footer .wrap{padding:24px 20px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
 footer a{color:#cbd5e1}
 .badge{display:inline-block;background:#eff6ff;color:var(--blue);border:1px solid #bfdbfe;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;margin-bottom:14px}
+.promptbox{background:#f1f5f9;border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:12px 14px;margin:10px 0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;white-space:pre-wrap;color:#0f172a}
+.use{color:var(--muted);font-size:14px;margin:4px 0}
+.price{display:flex;flex-direction:column;align-items:center;gap:6px;border:2px solid var(--blue);border-radius:16px;padding:24px;max-width:400px;margin:18px auto;text-align:center;background:#fff}
+.price .amt{font-size:42px;font-weight:800;line-height:1}
+.price .old{color:var(--muted);text-decoration:line-through;font-size:16px}
+.inside{columns:2;gap:28px;font-size:15px}
+.inside li{margin-bottom:8px}
+@media(max-width:640px){.inside{columns:1}}
+.guarantee{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:16px;text-align:center;color:#166534;font-size:14px;margin:20px auto;max-width:560px}

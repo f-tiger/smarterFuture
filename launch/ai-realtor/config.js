@@ -21,8 +21,12 @@ window.SITE_CONFIG = {
     aiToolkit: "#",             // 例: "https://partner.example.com/?ref=YOUR_ID"
   },
 
-  // 4) 收款/正式产品页（若产品已上线收款，填外部 URL，否则走等待名单）
-  productCheckoutUrl: "",       // 例: "https://buy.stripe.com/xxxx"
+  // 4) 收款/正式产品页（数字产品《AI Realtor Toolkit》的收款链接）
+  //    把 product-assets/ai-realtor-toolkit 打包上传到 Gumroad/Lemon Squeezy，拿到购买链接填这里。
+  //    留空 = 购买按钮回退到「加入早鸟名单」。详见 RUNBOOK.md。
+  productCheckoutUrl: "",       // 例: "https://yourname.gumroad.com/l/ai-realtor-toolkit"
+  productPrice: "$29",          // 售价展示
+  productPriceOld: "$49",       // 划线原价（可留空）
 
   // 5) 数据测量（强烈建议尽早开，用来看流量与转化）
   gaMeasurementId: ""           // Google Analytics 4，例: "G-XXXXXXXXXX"，留空=不加载
