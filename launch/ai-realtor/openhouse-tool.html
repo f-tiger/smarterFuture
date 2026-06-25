@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free AI Open House Kit Generator (Invite, Sign, Follow-Up) | ListingLift</title>
+<meta name="description" content="Free AI open house kit generator for real-estate agents: email invite, text invite, directional sign text, and a post-visit follow-up email. Instant, no signup."/>
+<link rel="canonical" href="https://f-tiger.github.io/smarterFuture/launch/ai-realtor/openhouse-tool.html"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Free AI Open House Kit Generator"/>
+<meta property="og:description" content="Email + text invite, sign text, and follow-up — generated in seconds. Free."/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"AI Open House Kit Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free open house kit generator for real-estate agents."}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="index.html">Listing<span>Lift</span></a>
+  <nav><a href="tools.html">Free tools</a><a href="index.html#guides">Guides</a><a href="toolkit.html">Toolkit</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="badge">Free · No signup · Works with any AI</div>
+  <h1>AI Open House <span style="color:#2563eb">Kit Generator</span></h1>
+  <p class="sub">Enter the details once and get your whole open house kit — email invite, text invite, sign text, and a follow-up email.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="section">
+    <form id="ohForm">
+      <div class="form-grid">
+        <div class="field full"><label for="o_prop">Property (address / name)</label><input id="o_prop" placeholder="123 Maple St"/></div>
+        <div class="field"><label for="o_area">Area / neighborhood</label><input id="o_area" placeholder="East Austin"/></div>
+        <div class="field"><label for="o_date">Date &amp; time</label><input id="o_date" placeholder="Sat, June 28, 1–3pm"/></div>
+        <div class="field"><label for="o_h1">Highlight 1</label><input id="o_h1" placeholder="renovated kitchen"/></div>
+        <div class="field"><label for="o_h2">Highlight 2</label><input id="o_h2" placeholder="big backyard"/></div>
+        <div class="field"><label for="o_agent">Your name</label><input id="o_agent" placeholder="Alex Rivera"/></div>
+        <div class="field"><label for="o_broker">Brokerage</label><input id="o_broker" placeholder="Rivera Realty"/></div>
+      </div>
+      <p style="margin-top:14px"><button class="btn blue" type="submit">Generate kit &rarr;</button></p>
+    </form>
+
+    <div id="results" style="display:none">
+      <div class="outhead"><h3 style="margin:0">📧 Email invite</h3><button class="copybtn" data-copy="outEmail">Copy</button></div>
+      <div class="promptbox" id="outEmail"></div>
+      <div class="outhead"><h3 style="margin:0">💬 Text invite</h3><button class="copybtn" data-copy="outText">Copy</button></div>
+      <div class="promptbox" id="outText"></div>
+      <div class="outhead"><h3 style="margin:0">🪧 Directional sign</h3><button class="copybtn" data-copy="outSign">Copy</button></div>
+      <div class="promptbox" id="outSign"></div>
+      <div class="outhead"><h3 style="margin:0">📨 Follow-up email</h3><button class="copybtn" data-copy="outFollow">Copy</button></div>
+      <div class="promptbox" id="outFollow"></div>
+      <p class="note">⚠️ Review for accuracy and fair-housing compliance before sending or printing.</p>
+      <div class="outhead"><h3 style="margin:0">🤖 Prompt to refine in any AI</h3><button class="copybtn" data-copy="outPrompt">Copy</button></div>
+      <div class="promptbox" id="outPrompt"></div>
+
+      <div class="aff" style="background:#eff6ff;border-color:#bfdbfe">
+        <h3>Want every template, all year? 🗓️</h3>
+        <p>The <strong>90-Day Content Calendar</strong> and <strong>AI Realtor Toolkit</strong> keep your marketing full. <a class="btn blue" data-buy href="toolkit.html" style="margin-left:6px">Get the Toolkit — <span data-price>$29</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot"></div>
+
+  <section class="section" style="text-align:center">
+    <h2>Get notified when the one-click app launches</h2>
+    <form class="cta-form" data-capture style="justify-content:center;margin:0 auto">
+      <input type="email" required placeholder="you@brokerage.com" aria-label="email"/>
+      <button class="btn" type="submit">加入早鸟名单</button>
+    </form>
+    <div class="note" data-msg></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <div>© <span data-brand>ListingLift</span> · Practical AI for real-estate agents · Not legal advice.</div>
+  <div><a href="tools.html">All free tools</a> · <a href="toolkit.html">Toolkit</a></div>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="openhouse-tool.js"></script>
+</body>
+</html>
