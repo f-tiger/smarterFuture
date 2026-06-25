@@ -5,7 +5,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - claude/compound-growth-website-91uwq4
       - main
   workflow_dispatch:
 
