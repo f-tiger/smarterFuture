@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free AI Real Estate Social Caption Generator (IG / FB / X) | ListingLift</title>
+<meta name="description" content="Free AI social media caption generator for real-estate agents. Enter a listing and get Instagram, Facebook, and X captions with hashtags — instantly. No signup."/>
+<link rel="canonical" href="https://f-tiger.github.io/smarterFuture/launch/ai-realtor/caption-tool.html"/>
+<meta name="robots" content="index,follow"/>
+<meta property="og:title" content="Free AI Real Estate Social Caption Generator"/>
+<meta property="og:description" content="Enter a listing → get IG, FB and X captions with hashtags. Free."/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"AI Real Estate Social Caption Generator","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free social caption generator for real-estate agents."}
+</script>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="index.html">Listing<span>Lift</span></a>
+  <nav><a href="tool.html">Listing tool</a><a href="email-tool.html">Email tool</a><a href="caption-tool.html">Caption tool</a><a href="toolkit.html">Toolkit</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="badge">Free · No signup · Works with any AI</div>
+  <h1>AI Social Caption <span style="color:#2563eb">Generator</span></h1>
+  <p class="sub">Enter a listing and get ready-to-post captions for Instagram, Facebook, and X — with hashtags — in seconds.</p>
+</div></section>
+
+<div class="wrap">
+  <section class="section">
+    <form id="capForm">
+      <div class="form-grid">
+        <div class="field full"><label for="c_property">Property (address / name)</label><input id="c_property" placeholder="123 Maple St"/></div>
+        <div class="field"><label for="c_area">Area / neighborhood</label><input id="c_area" placeholder="East Austin"/></div>
+        <div class="field"><label for="c_tone">Tone</label><select id="c_tone"><option>Warm</option><option>Luxury</option><option>Investor</option><option>Concise</option></select></div>
+        <div class="field"><label for="c_cta">Call to action</label><select id="c_cta"><option value="tour">Book a tour</option><option value="openhouse">Open house</option><option value="link">Link in bio</option><option value="call">Call / DM</option></select></div>
+        <div class="field full"><label for="c_features">Standout features (comma-separated)</label><textarea id="c_features" placeholder="renovated kitchen, big backyard, natural light"></textarea></div>
+      </div>
+      <p style="margin-top:14px"><button class="btn blue" type="submit">Generate captions &rarr;</button></p>
+    </form>
+
+    <div id="results" style="display:none">
+      <div class="outhead"><h3 style="margin:0">📸 Instagram</h3><button class="copybtn" data-copy="outIG">Copy</button></div>
+      <div class="promptbox" id="outIG"></div>
+      <div class="outhead"><h3 style="margin:0">👥 Facebook</h3><button class="copybtn" data-copy="outFB">Copy</button></div>
+      <div class="promptbox" id="outFB"></div>
+      <div class="outhead"><h3 style="margin:0">🐦 X</h3><button class="copybtn" data-copy="outX">Copy</button></div>
+      <div class="promptbox" id="outX"></div>
+      <p class="note">⚠️ Review for accuracy and fair-housing compliance before posting.</p>
+      <div class="outhead"><h3 style="margin:0">🤖 Prompt to refine in any AI</h3><button class="copybtn" data-copy="outPrompt">Copy</button></div>
+      <div class="promptbox" id="outPrompt"></div>
+
+      <div class="aff" style="background:#eff6ff;border-color:#bfdbfe">
+        <h3>Want a full 90-day calendar of posts? 🗓️</h3>
+        <p>The <strong>90-Day Content Calendar</strong> gives you a daily idea for a whole quarter. <a class="btn blue" data-buy2 href="calendar.html" style="margin-left:6px">Get the Calendar — <span data-price2>$19</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-slot"></div>
+
+  <section class="section" style="text-align:center">
+    <h2>Get notified when the one-click app launches</h2>
+    <form class="cta-form" data-capture style="justify-content:center;margin:0 auto">
+      <input type="email" required placeholder="you@brokerage.com" aria-label="email"/>
+      <button class="btn" type="submit">加入早鸟名单</button>
+    </form>
+    <div class="note" data-msg></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <div>© <span data-brand>ListingLift</span> · Practical AI for real-estate agents · Not legal advice.</div>
+  <div><a href="index.html">Home</a> · <a href="toolkit.html">Toolkit</a></div>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="caption-tool.js"></script>
+</body>
+</html>
