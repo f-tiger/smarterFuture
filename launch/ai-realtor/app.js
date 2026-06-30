@@ -75,6 +75,21 @@
   wireBuy('[data-buy]', C.productCheckoutUrl, 'AI Realtor Toolkit', 29);
   wireBuy('[data-buy2]', C.product2CheckoutUrl, '90-Day Content Calendar', 19);
 
+  // 书价展示
+  document.querySelectorAll('[data-book-price]').forEach(function (e) { e.textContent = C.bookPrice || '$4.99'; });
+  // Kindle 书链接：有 bookUrl 则可点（新窗口），否则标记 Coming soon 且不可点
+  document.querySelectorAll('[data-book]').forEach(function (el) {
+    if (C.bookUrl) {
+      el.setAttribute('href', C.bookUrl); el.setAttribute('target', '_blank'); el.setAttribute('rel', 'noopener');
+      el.addEventListener('click', function () { track('select_content', { item_name: 'Kindle Book', content_type: 'book' }); });
+    } else {
+      el.removeAttribute('href');
+      el.classList.add('soon');
+      var badge = el.querySelector('[data-book-badge]');
+      if (badge) badge.textContent = 'Coming soon';
+    }
+  });
+
   // 邮件名单表单
   document.querySelectorAll('form[data-capture]').forEach(function (form) {
     form.addEventListener('submit', function (ev) {
