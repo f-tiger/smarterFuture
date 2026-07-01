@@ -36,7 +36,7 @@ window.SITE_CONFIG = {
   // 4c) Kindle 电子书《The AI Listing & Lead System for Real Estate Agents》
   //     发布到 KDP 后，把 Amazon 书页链接（如 https://www.amazon.com/dp/XXXXXXXXXX）填到 bookUrl。
   //     留空 = 显示「Coming soon」，不可点。书与站互相导流。
-  bookUrl: "",                  // 例: "https://www.amazon.com/dp/B0XXXXXXX"
+  bookUrl: "https://payhip.com/b/bn7q6",  // Kindle-style ebook, sold via Payhip
   bookPrice: "$4.99",
 
   // 5) 数据测量（强烈建议尽早开，用来看流量与转化）
