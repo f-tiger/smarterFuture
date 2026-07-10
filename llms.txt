@@ -1,0 +1,24 @@
+# ListingLift — Practical AI for Real-Estate Agents
+
+> Free, no-login AI tools and 50+ practical guides that help real-estate agents write MLS-ready listing descriptions, follow-up emails, social captions, and bios in seconds — with fair-housing safety built into every prompt.
+
+ListingLift publishes copy-paste AI prompts and workflows for working agents. Every prompt specifies tone, length, and format, and includes the instruction to avoid fair-housing-sensitive language. Content is educational, not legal advice.
+
+## Free tools (no signup)
+- [AI Listing Writer](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/tool.html): draft an MLS-ready listing description in 30 seconds
+- [Roast My Listing](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/roast-tool.html): paste a listing, get an honest critique and a rewrite
+- [Follow-up Email Writer](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/email-tool.html): first-touch and follow-up emails for leads
+- [Caption Generator](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/caption-tool.html): Instagram/Facebook/X captions from one listing
+- [All tools](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/tools.html)
+
+## Key guides
+- [The complete guide to AI for real estate agents](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/ai-for-real-estate-agents.html): pillar overview linking all 49 playbooks
+- [How to write a listing with AI](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/how-to-write-listing-with-ai.html)
+- [Fair housing and AI compliance](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/guides/fair-housing-ai-compliance.html): risky phrases and safer alternatives
+- [Free prompt library](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/free-prompts.html)
+- [Full sitemap](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/sitemap.xml)
+
+## Products
+- [AI Realtor Toolkit ($29)](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/toolkit.html): 60 prompts, 15 email templates, 8 listing frameworks, fair-housing checklist
+- [90-Day Content Calendar ($19)](https://f-tiger.github.io/smarterFuture/launch/ai-realtor/calendar.html)
+- [The AI Listing & Lead System book ($9.99)](https://payhip.com/b/bn7q6): 130+ prompts, 8 before/after rewrites, 30-day plan
