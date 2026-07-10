@@ -116,7 +116,7 @@
         }
       }).catch(function () {
         if (msg) { msg.textContent = "Network error — please try again."; msg.style.color = '#e11d48'; }
-      }).finally(function () { if (btn) { btn.disabled = false; btn.textContent = "Get early access"; } });
+      }).finally(function () { if (btn) { btn.disabled = false; btn.textContent = "Join the free list"; } });
     });
   });
 })();

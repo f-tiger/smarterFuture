@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
 
   // 1) 邮件名单 / 等待名单（最关键的变现资产）
   //    填 Formspree/Buttondown/Resend 等的 POST endpoint。留空=演示模式。
-  emailEndpoint: "",            // 例: "https://formspree.io/f/xxxxxx"
+  emailEndpoint: "https://formspree.io/f/xzdlnanb",  // Formspree「ListingLift signups」
 
   // 2) 展示广告（有流量后开）
   adsenseClient: "",            // 例: "ca-pub-1234567890123456"，留空=显示占位
