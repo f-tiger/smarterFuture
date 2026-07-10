@@ -125,3 +125,53 @@
     });
   });
 })();
+
+// ===== 营收加速（业界方法论，诚信实现）=====
+(function () {
+  var C = window.SITE_CONFIG || {};
+  var BOOK = C.bookUrl || 'https://payhip.com/b/bn7q6';
+  function track(name, params) { if (window.gtag) { try { window.gtag('event', name, params || {}); } catch (e) {} } }
+
+  // 1) 价值交付时刻 upsell：免费工具出结果后，就地展示完整版 offer（每页一次）
+  var res = document.getElementById('results');
+  if (res) {
+    var injected = false;
+    var inject = function () {
+      if (injected || res.style.display === 'none') return;
+      injected = true;
+      var d = document.createElement('div');
+      d.className = 'aff';
+      d.innerHTML = '<h3>✨ Like this? It\'s 1 of 130+.</h3>' +
+        '<p>The full guide has 130+ prompts, 8 before/after rewrites and a fair-housing word list — ' +
+        '<strong>$5.99</strong> with code <strong>LAUNCH40</strong> (reg. $9.99). ' +
+        '<a href="' + BOOK + '" target="_blank" rel="noopener"><strong>Get the full guide &rarr;</strong></a></p>';
+      res.appendChild(d);
+      track('view_promotion', { placement: 'post_result' });
+    };
+    new MutationObserver(inject).observe(res, { attributes: true, attributeFilter: ['style'] });
+    inject();
+  }
+
+  // 2) 退出挽留：桌面端鼠标移出视口顶部，一次会话仅一次，welcome 页不打扰
+  if (location.pathname.indexOf('welcome.html') !== -1) return;
+  try { if (sessionStorage.getItem('ll_exit_shown')) return; } catch (e) {}
+  var shown = false;
+  document.addEventListener('mouseout', function (ev) {
+    if (shown || ev.clientY > 8 || ev.relatedTarget) return;
+    shown = true;
+    try { sessionStorage.setItem('ll_exit_shown', '1'); } catch (e) {}
+    var o = document.createElement('div');
+    o.setAttribute('style', 'position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px');
+    o.innerHTML = '<div style="background:#fff;border-radius:14px;max-width:420px;width:100%;padding:28px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)">' +
+      '<div style="font-size:34px">🎁</div>' +
+      '<h3 style="margin:8px 0 6px;font-size:20px">Your 40% off is still active</h3>' +
+      '<p style="margin:0 0 16px;color:#475569;font-size:15px">The full 130+ prompt guide is <strong>$5.99</strong> with code <strong>LAUNCH40</strong> (reg. $9.99). Instant download, 30-day refund.</p>' +
+      '<a href="' + BOOK + '" target="_blank" rel="noopener" class="btn blue" style="display:block;margin-bottom:10px">Get it for $5.99 &rarr;</a>' +
+      '<a href="#" data-close style="font-size:13px;color:#94a3b8">No thanks</a></div>';
+    o.addEventListener('click', function (ev2) {
+      if (ev2.target === o || ev2.target.hasAttribute('data-close')) { ev2.preventDefault(); o.remove(); }
+    });
+    document.body.appendChild(o);
+    track('view_promotion', { placement: 'exit_intent' });
+  });
+})();
