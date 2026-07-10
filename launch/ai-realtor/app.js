@@ -111,7 +111,12 @@
         body: JSON.stringify({ email: email, source: 'listinglift' })
       }).then(function (r) {
         if (msg) {
-          if (r.ok) { track('generate_lead', { source: 'listinglift' }); msg.textContent = "✅ You're on the list — check your inbox!"; msg.style.color = '#16a34a'; form.reset(); }
+          if (r.ok) {
+            track('generate_lead', { source: 'listinglift' }); form.reset();
+            // 感谢页 tripwire：注册成功 → 跳转一次性欢迎 offer（guides 子目录需回上一级）
+            var wl = location.pathname.indexOf('/guides/') !== -1 ? '../welcome.html' : 'welcome.html';
+            window.location.href = wl; return;
+          }
           else { msg.textContent = "Something went wrong — please try again."; msg.style.color = '#e11d48'; }
         }
       }).catch(function () {
