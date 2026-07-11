@@ -37,6 +37,11 @@ window.SITE_CONFIG = {
   //     发布到 KDP 后，把 Amazon 书页链接（如 https://www.amazon.com/dp/XXXXXXXXXX）填到 bookUrl。
   //     留空 = 显示「Coming soon」，不可点。书与站互相导流。
   bookUrl: "https://payhip.com/b/bn7q6",  // Kindle-style ebook, sold via Payhip
+
+  // 4d) 第四个数字产品《The Agent Scripts Vault》（话术库，$12.99）
+  //     上架 Payhip 后填购买链接；留空 = 站点卡片显示 Coming soon。
+  product3CheckoutUrl: "",
+  product3Price: "$12.99",
   bookPrice: "$4.99",
 
   // 5) 数据测量（强烈建议尽早开，用来看流量与转化）

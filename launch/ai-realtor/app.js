@@ -90,6 +90,18 @@
     }
   });
 
+  // Scripts Vault（产品4）：有链接则可购，否则 Coming soon
+  document.querySelectorAll('[data-price3]').forEach(function (e) { e.textContent = C.product3Price || '$12.99'; });
+  document.querySelectorAll('[data-product3]').forEach(function (el) {
+    if (C.product3CheckoutUrl) {
+      el.setAttribute('href', C.product3CheckoutUrl); el.setAttribute('target', '_blank'); el.setAttribute('rel', 'noopener');
+      el.addEventListener('click', function () { track('begin_checkout', { item_name: 'Agent Scripts Vault', value: 12.99, currency: 'USD' }); });
+    } else {
+      el.removeAttribute('href'); el.classList.add('soon');
+      var b = el.querySelector('[data-product3-badge]'); if (b) b.textContent = 'Coming soon';
+    }
+  });
+
   // 邮件名单表单
   document.querySelectorAll('form[data-capture]').forEach(function (form) {
     form.addEventListener('submit', function (ev) {
