@@ -33,7 +33,7 @@ jobs:
           cp -r assets data _site/
           cp -r launch _site/
           cp _headers _site/ 2>/dev/null || true
-          cp robots.txt llms.txt _site/ 2>/dev/null || true
+          cp robots.txt llms.txt sitemap.xml _site/ 2>/dev/null || true
           # 关闭 Jekyll，确保以纯静态方式服务
           touch _site/.nojekyll
 
