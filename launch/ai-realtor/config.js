@@ -40,7 +40,7 @@ window.SITE_CONFIG = {
 
   // 4d) 第四个数字产品《The Agent Scripts Vault》（话术库，$12.99）
   //     上架 Payhip 后填购买链接；留空 = 站点卡片显示 Coming soon。
-  product3CheckoutUrl: "",
+  product3CheckoutUrl: "https://payhip.com/b/IsW8A",  // Agent Scripts Vault（Payhip）
   product3Price: "$12.99",
   bookPrice: "$4.99",
 
