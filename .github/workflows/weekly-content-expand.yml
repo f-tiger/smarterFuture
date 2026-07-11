@@ -1,0 +1,64 @@
+name: ListingLift 内容扩产（草稿 PR）
+
+# 每周自动起草 1-2 篇新 SEO guide，开 PR 供人工审核后合并 —— 绝不直接发布到 main。
+on:
+  schedule:
+    - cron: '0 2 * * 3'   # 每周三 02:00 UTC
+  workflow_dispatch:
+    inputs:
+      targetNew:
+        description: '本次生成的新 guide 数量'
+        required: false
+        default: '2'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装依赖
+        working-directory: automation
+        run: npm install
+
+      - name: 生成新 guide 草稿
+        working-directory: automation
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # ⚠️ 需在仓库 Settings → Secrets 配置
+          MARKETING_MODEL: claude-sonnet-4-6
+          TARGET_NEW: ${{ github.event.inputs.targetNew || '2' }}
+        run: node generate-guides.mjs
+
+      - name: 检查是否有变更
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain launch/)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 提交并开 PR（供人工审核）
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH="content/auto-guides-$(date -u +%Y-%m-%d)"
+          git config user.name  "listinglift-content-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add launch/
+          git commit -m "content: 自动起草新 SEO guide 草稿 ($(date -u +%Y-%m-%d)) — 待人工审核"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "内容草稿：新增 SEO guide ($(date -u +%Y-%m-%d))" \
+            --body "自动生成的草稿，**合并前请人工核对**：事实准确性、语气、fair-housing 合规、与现有页面是否重复。审核通过再合并到 main（合并后随下次部署自动上线并触发 IndexNow 提交）。" \
+            --base main --head "$BRANCH"

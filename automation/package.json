@@ -5,7 +5,9 @@
   "description": "自动调研海外创业项目并生成结构化分析，写入 data/projects.json",
   "scripts": {
     "research": "node research.mjs",
-    "research:dry": "DRY_RUN=1 node research.mjs"
+    "research:dry": "DRY_RUN=1 node research.mjs",
+    "guides": "node generate-guides.mjs",
+    "guides:dry": "DRY_RUN=1 node generate-guides.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.30.1"

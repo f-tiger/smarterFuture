@@ -34,6 +34,7 @@ jobs:
           cp -r launch _site/
           cp _headers _site/ 2>/dev/null || true
           cp robots.txt llms.txt sitemap.xml _site/ 2>/dev/null || true
+          cp *.txt _site/ 2>/dev/null || true
           # 关闭 Jekyll，确保以纯静态方式服务
           touch _site/.nojekyll
 
@@ -47,3 +48,21 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: 提交 IndexNow（免账号，加速 Bing/Yandex/Seznam/Naver 收录新/改页面）
+        run: |
+          KEY="45d3570ff1ef9c3127af1397149f266c"
+          HOST="f-tiger.github.io"
+          URLS=$(grep -ohE '<loc>[^<]+</loc>' launch/ai-realtor/sitemap.xml 2>/dev/null \
+            | sed -E 's#</?loc>##g' | sort -u | jq -R . | jq -s .)
+          if [ "$(echo "$URLS" | jq 'length')" -eq 0 ]; then
+            echo "无 sitemap URL，跳过 IndexNow 提交。"
+            exit 0
+          fi
+          BODY=$(jq -n --arg host "$HOST" --arg key "$KEY" \
+            --arg keyLocation "https://$HOST/${KEY}.txt" --argjson urlList "$URLS" \
+            '{host:$host, key:$key, keyLocation:$keyLocation, urlList:$urlList}')
+          curl -s -o /dev/null -w "IndexNow 提交状态: %{http_code}\n" \
+            -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data "$BODY" || echo "IndexNow 提交失败，不影响本次部署。"
