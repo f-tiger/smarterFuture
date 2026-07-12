@@ -45,5 +45,5 @@ window.SITE_CONFIG = {
   bookPrice: "$4.99",
 
   // 5) 数据测量（强烈建议尽早开，用来看流量与转化）
-  gaMeasurementId: ""           // Google Analytics 4，例: "G-XXXXXXXXXX"，留空=不加载
+  gaMeasurementId: "G-HT123LQLP7"   // Google Analytics 4，例: "G-XXXXXXXXXX"，留空=不加载
 };
