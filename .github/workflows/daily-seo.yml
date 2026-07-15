@@ -1,0 +1,70 @@
+name: 每日站点优化 (Daily Optimize)
+
+# 每天自主优化站点，无需人工决策：
+#   1)（若配置了 ANTHROPIC_API_KEY）自动生成 1 篇新 SEO guide，经"质量门禁"
+#      （fair-housing 风险词 / 疑似编造数据 / 结构校验）过滤，不合格直接丢弃。
+#   2) 重建 sitemap.xml（带真实 lastmod）并做完整性二次门禁（断链/OG/canonical/title）。
+#      —— 若新内容未过门禁，本步以非零码失败，从而【不提交】任何东西，坏内容永不上线。
+#   3) 通过后把改动一次性提交到 main → 触发 deploy-pages（部署 + IndexNow 通知搜索引擎）。
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 每天 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      newGuides:
+        description: '本次生成的新 guide 数量'
+        required: false
+        default: '1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-optimize
+  cancel-in-progress: false
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # daily-seo.mjs 需要 git 历史取各文件 lastmod
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装依赖
+        working-directory: automation
+        run: npm install
+
+      - name: 生成新内容（配置了 API key 才跑；失败不影响后续维护）
+        continue-on-error: true
+        working-directory: automation
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MARKETING_MODEL: claude-sonnet-4-6
+          TARGET_NEW: ${{ github.event.inputs.newGuides || '1' }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "未配置 ANTHROPIC_API_KEY，跳过内容生成，仅做 SEO 维护。"
+            exit 0
+          fi
+          node generate-guides.mjs
+
+      - name: 重建 sitemap + 完整性门禁（坏内容会在此被拦下）
+        run: node automation/daily-seo.mjs
+
+      - name: 提交改动到 main（触发部署 + IndexNow）
+        run: |
+          if [ -n "$(git status --porcelain launch/)" ]; then
+            git config user.name  "listinglift-optimize-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add launch/
+            git commit -m "chore(optimize): 每日站点优化 ($(date -u +%Y-%m-%d))"
+            git push
+            echo "✅ 已提交并推送每日优化。"
+          else
+            echo "无变化，跳过提交。"
+          fi

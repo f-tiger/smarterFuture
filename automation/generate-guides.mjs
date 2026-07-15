@@ -19,6 +19,7 @@
 
 import Anthropic from '@anthropic-ai/sdk';
 import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -140,14 +141,50 @@ async function addToIndexCard(slug, title, metaDescription) {
   await writeFile(p, html.slice(0, insertAt) + card + html.slice(insertAt));
 }
 
+// ===== 自动质量门禁（无人值守发布的安全网，替代人工审核）=====
+// fair-housing 高风险措辞：描述"什么人该住这里"而非房子本身 → 一律拒绝。
+const FAIR_HOUSING_RED_FLAGS = [
+  /\bperfect for families\b/i, /\bgreat for (?:families|kids|couples|singles)\b/i,
+  /\bsafe neighborhood\b/i, /\bsafe area\b/i, /\bwalk to church\b/i,
+  /\bchristian\b/i, /\bexclusive neighborhood\b/i, /\bno children\b/i,
+  /\bbachelor pad\b/i, /\bempty nesters?\b/i, /\bideal for a (?:young )?family\b/i,
+  /\bmaster bedroom\b/i,  // 现代合规用 primary bedroom
+];
+// 可疑的"编造统计" —— 具体百分比/数量断言且无来源，容易是幻觉。
+const FABRICATED_STAT = /\b\d{1,3}%\s+of\s+(?:agents|realtors|buyers|sellers|homes)\b/i;
+
+function validateGuide(item) {
+  const problems = [];
+  for (const f of ['slug', 'title', 'metaDescription', 'bodyHtml']) {
+    if (!item[f] || typeof item[f] !== 'string') problems.push(`缺字段 ${f}`);
+  }
+  if (item.slug && !/^[a-z0-9-]+$/.test(item.slug)) problems.push('slug 非法字符');
+  if (item.metaDescription && item.metaDescription.length > 165) problems.push('metaDescription 过长');
+  const body = item.bodyHtml || '';
+  for (const rx of FAIR_HOUSING_RED_FLAGS) if (rx.test(body)) problems.push(`fair-housing 风险措辞: ${rx}`);
+  if (FABRICATED_STAT.test(body)) problems.push('疑似编造统计数据（无来源的百分比断言）');
+  if (!/<h2[ >]/.test(body)) problems.push('正文无 <h2> 小节');
+  // 标签平衡
+  for (const tag of ['p', 'ul', 'div']) {
+    const o = (body.match(new RegExp(`<${tag}[ >]`, 'g')) || []).length;
+    const c = (body.match(new RegExp(`</${tag}>`, 'g')) || []).length;
+    if (o !== c) problems.push(`标签不平衡: ${tag} (${o}/${c})`);
+  }
+  // keepReading 指向的 slug 必须真实存在
+  for (const k of (item.keepReading || [])) {
+    if (!existsSync(join(GUIDES, `${k.slug}.html`))) problems.push(`keepReading 指向不存在的页: ${k.slug}`);
+  }
+  return problems;
+}
+
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) { console.error('❌ 缺少 ANTHROPIC_API_KEY（必须的人工介入点）。'); process.exit(1); }
+  if (!apiKey) { console.error('❌ 缺少 ANTHROPIC_API_KEY。'); process.exit(1); }
 
   const covered = await existingSlugsAndTitles();
   const client = new Anthropic({ apiKey });
 
-  console.log(`📚 已覆盖 ${covered.length} 篇 guide，请求生成 ${TARGET_NEW} 篇新草稿...`);
+  console.log(`📚 已覆盖 ${covered.length} 篇 guide，请求生成 ${TARGET_NEW} 篇...`);
   const res = await client.messages.create({
     model: MODEL, max_tokens: 8000, system: SYSTEM,
     messages: [{ role: 'user', content: prompt(covered, TARGET_NEW) }],
@@ -156,22 +193,30 @@ async function main() {
   const items = extractJSON(text);
 
   const known = new Set(covered.map(c => c.slug));
-  let created = 0;
+  let created = 0, rejected = 0;
   for (const item of items) {
     if (!item.slug || known.has(item.slug)) { console.log(`⏭️  跳过重复 slug: ${item.slug}`); continue; }
+    // 质量门禁：任一问题即拒绝该草稿（宁缺毋滥，因为要无人值守直接上线）
+    const problems = validateGuide(item);
+    if (problems.length) {
+      rejected++;
+      console.log(`   🚫 拒绝 ${item.slug}：${problems.join('；')}`);
+      continue;
+    }
     const html = wrapTemplate(item);
     if (DRY_RUN) {
-      console.log(`--- DRY RUN: ${item.slug}.html ---\n${html.slice(0, 300)}...\n`);
+      console.log(`--- DRY RUN 通过门禁: ${item.slug}.html ---\n${html.slice(0, 200)}...\n`);
       continue;
     }
     await writeFile(join(GUIDES, `${item.slug}.html`), html);
-    await addToSitemap(item.slug);
-    await addToIndexCard(item.slug, item.title, item.metaDescription);
+    await addToIndexCard(item.slug, item.title, item.metaDescription);  // sitemap 交给 daily-seo.mjs 统一重建
     known.add(item.slug);
     created++;
-    console.log(`   💾 已生成草稿：guides/${item.slug}.html（关键词: ${item.keyword}）`);
+    console.log(`   ✅ 已发布：guides/${item.slug}.html（关键词: ${item.keyword}）`);
   }
-  console.log(DRY_RUN ? '✅ Dry run 完成，未写文件。' : `✅ 完成，新增 ${created} 篇草稿，等待 PR 审核。`);
+  console.log(DRY_RUN
+    ? `✅ Dry run 完成（通过门禁但未写文件）。拒绝 ${rejected} 篇。`
+    : `✅ 完成，新增 ${created} 篇（拒绝 ${rejected} 篇）。sitemap 由 daily-seo 重建。`);
 }
 
 main().catch(err => { console.error('❌ 运行出错：', err); process.exit(1); });
