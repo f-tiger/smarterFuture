@@ -8,7 +8,7 @@ name: 每日站点优化 (Daily Optimize)
 #   3) 通过后把改动一次性提交到 main → 触发 deploy-pages（部署 + IndexNow 通知搜索引擎）。
 on:
   schedule:
-    - cron: '0 3 * * *'   # 每天 03:00 UTC
+    - cron: '0 3 * * *'   # 每天 03:00 UTC = 北京时间 11:00（UTC+8）
   workflow_dispatch:
     inputs:
       newGuides:
